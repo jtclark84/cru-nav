@@ -1521,8 +1521,6 @@ body {
  */
 @font-face {
   font-family: 'FontAwesome';
-  src: url(//wpmegamenu.com/wp-content/plugins/crumenu/assets/css/fontawesome/css/../fonts/fontawesome-webfont.eot?v=4.3.0);
-  src: url(//wpmegamenu.com/wp-content/plugins/crumenu/assets/css/fontawesome/css/../fonts/fontawesome-webfont.eot?#iefix&v=4.3.0) format("embedded-opentype"), url(//wpmegamenu.com/wp-content/plugins/crumenu/assets/css/fontawesome/css/../fonts/fontawesome-webfont.woff2?v=4.3.0) format("woff2"), url(//wpmegamenu.com/wp-content/plugins/crumenu/assets/css/fontawesome/css/../fonts/fontawesome-webfont.woff?v=4.3.0) format("woff"), url(//wpmegamenu.com/wp-content/plugins/crumenu/assets/css/fontawesome/css/../fonts/fontawesome-webfont.ttf?v=4.3.0) format("truetype"), url(//wpmegamenu.com/wp-content/plugins/crumenu/assets/css/fontawesome/css/../fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular) format("svg");
   font-weight: normal;
   font-style: normal; }
 .fa {
@@ -3393,7 +3391,7 @@ body {
   border-radius: 2px; }
 
 .crumenu .crumenu-submenu.crumenu-submenu-bkg-img {
-  background-image: url(//wpmegamenu.com/wp-content/uploads/2014/06/woman-music_200.png);
+  background-image: url();
   background-repeat: no-repeat;
   background-position: bottom left;
   background-size: auto; }
