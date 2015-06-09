@@ -1,0 +1,44 @@
+<div class="off-canvas-wrap">
+    <div class="inner-wrap">            
+        <!-- TITLE BAR -->
+        <header class="site-header">
+            <div class="navbar" role="navigation">
+                <div class="title-bar">
+                    <!-- TITLE GROUP -->
+                    <hgroup class="title-group  site-logo  js-nav-toggle">
+                        <a href="{{ site.root }}flyout/index.html" title="Return to Homepage">
+                            <h1>
+                                <span class="accessibility">
+                                    Cru is a caring community passionate about connecting people to Jesus Christ
+                                </span>
+                            </h1>
+                        </a>
+                    </hgroup>
+                     <!-- END TITLE GROUP -->
+             
+                    <!-- SITE SEARCH -->                        
+                    <div class="site-search">
+                        <label for="site-search" class="site-search__label">Search</label>
+                        <form class="m0 site-search-form">
+                            <fieldset class="m0">
+                                <ul class="nav  bare-list">
+                                    <li>
+                                        <select type="select" class="form-control site-search__select">
+                                            <option value="Entire Site">Entire Site</option>
+                                            <option value="Give">Give to Staff and Ministries</option>
+                                        </select>
+                                    </li>
+                                    <li>
+                                        <input id="site-search" type="search" class="site-search__input  form-control"></input>
+                                    </li>
+                                    <li>
+                                         <input type="submit" value="Go"  class="site-search__button  button button--subtle  button--small"></input>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <!-- END SITE SEARCH -->
+                </div>
+                
+                {% include mega-menu-navigation.html %}

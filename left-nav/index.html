@@ -1,0 +1,745 @@
+<head>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/restangular/1.3.1/restangular.min.js"></script>
+    <script src="//platform.twitter.com/widgets.js" id="twitter-wjs" ></script>
+
+    <!-- Load Stylesheets and fonts -->
+    <script type="text/javascript">
+    	(function() {
+        var config = {
+        kitId: 'usb5wjy',
+        scriptTimeout: 3000
+        };
+        var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+        })();
+    </script>     
+    
+    <link rel="stylesheet" type="text/css" href="../css/screen.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/left-nav.css"/>
+
+</head>
+<body class="page" ng-app="ngToggle">
+    <div class="preload">
+    	<img src="/images/cru-logo.svg" alt="" width="0" height="0">
+    	<img src="/images/cru-logo.png" alt="" width="0" height="0">
+    </div>
+    <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="http://static.ak.facebook.com/connect/xd_arbiter/QjK2hWv6uak.js?version=41#channel=f2d32dc64&amp;origin=http%3A%2F%2Fwww.cru.org" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="https://s-static.ak.facebook.com/connect/xd_arbiter/QjK2hWv6uak.js?version=41#channel=f2d32dc64&amp;origin=http%3A%2F%2Fwww.cru.org" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+    <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=116517098374395&version=v2.0";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="off-canvas-wrap">
+        <div class="inner-wrap">
+            <a class="toggle-nav">Toggle Nav</a>
+            
+            <!-- TITLE BAR -->
+        <div class="site-header">
+
+                
+                <!-- TITLE GROUP -->
+                <hgroup class="title-group  site-logo  js-nav-toggle">
+                    <a href="#" title="Return to Homepage">
+                        <h1>
+                            <span class="accessibility">
+                                Cru is a caring community passionate about connecting people to Jesus Christ
+                            </span>
+                        </h1>
+                    </a>
+                </hgroup>
+                 <!-- END TITLE GROUP -->
+                 
+                <!-- SITE SEARCH -->
+                <div class="site-search">
+                    <form class="m0">
+                        <fieldset class="m0">
+                            <ul class="nav  bare-list">
+                                <li>
+                                    <input type="search" class="form-control"></input>
+                                </li>
+                                <li>
+                                     <input type="submit" value="Search"  class="button button--subtle  button--small"></input>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </form>
+                </div>
+                <!-- END SITE SEARCH -->
+                
+            </div>
+            <!-- END TITLE BAR -->
+            
+            <section role="main" class="site-main">
+                <!-- SITE NAV -->
+                <nav class="site-nav-wrap">
+                    <ul role="navigation" class="site-nav  block-list  m0">
+                        
+                        <li class="level0  has-submenu  opportunities" data-submenu-class="submenu-0">
+                                                       
+                            <a href="#" class="level0__menu-link  menu-link active">
+                                Opportunities
+                                <i class="icon-right-arrow"></i>
+                            </a>
+                            
+                            <div class="site-nav__submenu  submenu-0" style="height: 492px;">
+                               <!-- <img src="http://g-ecx.images-amazon.com/images/G/01/digital/music/merch/weeklybuild/101414/U2_101414_Whitebelt_Flyout._V323882074_.png" usemap="#nav_imgmap_digital-music" class="nav-browse-promo" style="bottom: -38px; right: -21px; width: 520px; height: 492px;">
+                               <map name="nav_imgmap_digital-music" id="nav_imgmap_digital-music">
+                                    <area shape="poly" coords="238,2,226,233,154,258,115,281,2,281,1,453,497,455,497,1" href="/dp/B00NX53H2W/ref=nav_sa_dm_u2_dp_wb" alt="U2"> -->
+                                </map>
+                                <ul class="nav-submenu__group  level1  block-list  m0  position--absolute">                                                                            <li>
+                                        <a href="#" class="nav-cat">Mission Trips</a>
+                                    </li>
+
+                                    <li class="nav-divider-before">
+                                        <a href="#" class="nav-cat">Careers</a>   
+                                        <ul class="block-list  level2">
+                                            <li><a href="#" class="nav-cat--sub">Hourly & Salaried Positions at Our World Headquarters</a></li>
+                                            <li><a href="#" class="nav-cat--sub">World Headquarters Opportunities</a></li>
+                                            <li><a href="#" class="nav-cat--sub">Missionary Staff Careers</a></li>
+                                            <li><a href="#" class="nav-cat--sub">International Missions Opportunities</a></li>
+                                            <li><a href="#" class="nav-cat--sub">Staff Profiles</a></li>
+                                        </ul>        
+                                    </li>
+                                    
+                                    <li class="nav-divider-before">
+                                        <a href="#" class="nav-cat">Internships</a>
+                                        <ul class="block-list  level2">
+                                            <li><a href="#" class="nav-cat--sub">Orlando Summer Project</a></li>
+                                            <li><a href="#" class="nav-cat--sub">Preview Weekend</a></li>
+                                            <li><a href="#" class="nav-cat--sub">1-Year Internship in Orlando</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="nav-submenu__group  level1  cat-2  block-list  m0  position--absolute">
+                                    <li>
+                                        <a href="#" class="nav-cat">Volunteer</a>
+                                        <ul class="block-list  level2">
+                                            <li><a href="#" class="nav-cat--sub">Contact Us</a></li>
+                                            <li><a href="#" class="nav-cat--sub">Orlando Openings</a></li>
+                                            <li><a href="#" class="nav-cat--sub">Volunteer Profiles</a></li>
+                                            <li><a href="#" class="nav-cat--sub">Volunteer Sign Up</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        
+                        
+                        <li class="level0  has-submenu  know-god" data-submenu-class="submenu-1">
+                            <a href="#" class="level0__menu-link  menu-link">
+                                How to Know God
+                                <i class="icon-right-arrow"></i>
+                            </a>                            
+                            <div class="site-nav__submenu  submenu-1" style="width:460px;">
+                                <ul class="nav-submenu__group  block-list  m0  position--absolute">                           
+                                    <li>
+                                        <a href="#" class="nav-cat"  id="nav-cat-0">How to Know God Personally</a>           
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">My Story: A Life Changed</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">Jesus and the Intellectual</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">Jesus: God or Just a Good Man?</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">Why the Resurrection Matters to You</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li class="level0  has-submenu  communities" data-submenu-class="submenu-2">
+                                                       
+                            <a href="#" class="level0__menu-link  menu-link">
+                                Train & Grow
+                                <i class="icon-right-arrow"></i>
+                            </a>
+                            
+                            <div class="site-nav__submenu  submenu-2" style="width:460px;">
+                                <ul class="nav-submenu__group  block-list  m0  position--absolute">                           
+                                    <li>
+                                        <a href="#" class="nav-cat"  id="nav-cat-0">Classics</a>           
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">Bible Studies</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">Training</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">Evangelism</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">Prayer, Quiet Times, Devotionals</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">Evangelism without a bullhorn</a>
+                                    </li>
+                                </ul>
+                            </div>                            
+                        </li>
+                        
+                        
+                        <li class="level0  has-submenu  communities" data-submenu-class="submenu-3">
+                                                       
+                            <a href="#" class="level0__menu-link  menu-link">
+                                Communities
+                                <i class="icon-right-arrow"></i>
+                            </a>
+                            
+                            <div class="site-nav__submenu  submenu-3"  style="width:460px;" id="train-grow">
+                                <ul class="nav-submenu__group  block-list  m0  position--absolute">                           
+                                    <li>
+                                        <a href="#" class="nav-cat"  id="nav-cat-0">Campus</a>           
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">City</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">Inner City</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">Athletes</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">Families</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">High School</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">Military</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">Locate Cru Near You</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">Families</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">More</a>
+                                    </li>                                    
+                                </ul>
+                            </div>  
+                        </li>
+                        <li class="level0  has-submenu  about" data-submenu-class="submenu-4">
+                           <a href="#" class="level0__menu-link  menu-link">
+                               About
+                               <i class="icon-right-arrow"></i>
+                           </a>
+                           <div class="site-nav__submenu  submenu-4" style="width:460px;">
+                               <ul class="nav-submenu__group  block-list  m0  position--absolute">                           
+                                   <li>
+                                       <a href="#" class="nav-cat"  id="nav-cat-0">Donor Relations</a>           
+                                   </li>
+                                   <li>
+                                       <a href="#" class="nav-cat">What We Do</a>
+                                   </li>
+                                   <li>
+                                       <a href="#" class="nav-cat">Our Leadership</a>
+                                   </li>
+                                   <li>
+                                       <a href="#" class="nav-cat">Contact Us</a>
+                                   </li>
+                                   <li>
+                                       <a href="#" class="nav-cat">Press</a>
+                                   </li>
+                                   <li>
+                                       <a href="#" class="nav-cat">World Wide Challenge</a>
+                                   </li>
+                               </ul>
+                           </div>
+                        </li>
+                            
+                        <li class="level0  has-submenu  store" data-submenu-class="submenu-5">
+                            <a href="#" class="level0__menu-link  menu-link">
+                                Store
+                                <i class="icon-right-arrow"></i>
+                            </a>                            
+                            <div class="site-nav__submenu  submenu-5" style="width:460px;">
+                                <ul class="nav-submenu__group  block-list  m0  position--absolute">                           
+                                    <li>
+                                        <a href="#" class="nav-cat"  id="nav-cat-0">All Stores</a>           
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">Featured Products</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="level0  give">
+                            <a href="#" class="level0__menu-link  menu-link">
+                                Give
+                            </a>                            
+                        </li>
+                        
+                    </ul>
+                </nav>
+                <!-- END SITE NAV -->
+                
+                <!-- PAGE CONTENT --> 
+                <div class="page-content-wrap">
+                    <div xk-section="v1" class="parbase main-slider base curated">
+
+                    <div class="content-slider  position--relative  overflow--hide  mb">
+
+                    <div class="slider  centered  position--relative">
+                            <!-- .mask -->
+                            <div class="slider__mask  overflow--hide">
+                              <ul class="bare-list">
+			
+				
+                                        <li class="slider__item  position--absolute  full-height">
+                                          <a class="position--relative  display--block  full-height" href="/communities/athletes/my-story-adam-wainwright.html" onclick="ga('send', 'event', 'Carousel', 'CruHome', '/content/cru/us/en/communities/athletes/my-story-adam-wainwright.html');">
+                                            <div class="full-height  full-width">
+                                              <!-- This is the background image style that will be changed based on the article image -->
+                                              <div class="background-image" style="background-image: url('http://cru.org/communities/athletes/my-story-adam-wainwright/_jcr_content/image.transform/Cru704x396/image.jpg')"></div>
+                                            </div>
+                                            <div class="article-details  position--absolute  p0">
+                                              <h3 class="affordance  display--block  m0">&quot;I had doubts and was always questioning&quot;</h3>
+                                            </div>
+                                          </a>
+                                        </li>
+			   
+                                        <li class="slider__item  position--absolute  full-height">
+                                          <a class="position--relative  display--block  full-height" href="/communities/families/dont-become-a-social-media-marriage-casualty.html" onclick="ga('send', 'event', 'Carousel', 'CruHome', '/content/cru/us/en/communities/families/dont-become-a-social-media-marriage-casualty.html');">
+                                            <div class="full-height  full-width">
+                                              <!-- This is the background image style that will be changed based on the article image -->
+                                              <div class="background-image" style="background-image: url('http://cru.org/communities/families/dont-become-a-social-media-marriage-casualty/_jcr_content/image.transform/Cru704x396/image.jpg')"></div>
+                                            </div>
+                                            <div class="article-details  position--absolute  p0">
+                                              <h3 class="affordance  display--block  m0">Don’t become a social media marriage casualty</h3>
+                                            </div>
+                                          </a>
+                                        </li>
+			   
+                                        <li class="slider__item  position--absolute  full-height">
+                                          <a class="position--relative  display--block  full-height" href="/train-and-grow/bible-studies/7-steps-to-improve-your-bible-study.html" onclick="ga('send', 'event', 'Carousel', 'CruHome', '/content/cru/us/en/train-and-grow/bible-studies/7-steps-to-improve-your-bible-study.html');">
+                                            <div class="full-height  full-width">
+                                              <!-- This is the background image style that will be changed based on the article image -->
+                                              <div class="background-image" style="background-image: url('http://cru.org/train-and-grow/bible-studies/7-steps-to-improve-your-bible-study/_jcr_content/image.transform/Cru704x396/image.jpg')"></div>
+                                            </div>
+                                            <div class="article-details  position--absolute  p0">
+                                              <h3 class="affordance  display--block  m0">7 steps to improve your Bible study</h3>
+                                            </div>
+                                          </a>
+                                        </li>
+			   
+                                        <li class="slider__item  position--absolute  full-height">
+                                          <a class="position--relative  display--block  full-height" href="/communities/inner-city/finding-consistency-in-devastation.html" onclick="ga('send', 'event', 'Carousel', 'CruHome', '/content/cru/us/en/communities/inner-city/finding-consistency-in-devastation.html');">
+                                            <div class="full-height  full-width">
+                                              <!-- This is the background image style that will be changed based on the article image -->
+                                              <div class="background-image" style="background-image: url('http://cru.org/communities/inner-city/finding-consistency-in-devastation/_jcr_content/image.transform/Cru704x396/image.jpg')"></div>
+                                            </div>
+                                            <div class="article-details  position--absolute  p0">
+                                              <h3 class="affordance  display--block  m0">Finding consistency in devastation</h3>
+                                            </div>
+                                          </a>
+                                        </li>
+			   
+			
+                              </ul>
+                            </div>
+                            <!-- end .mask -->
+                          </div>
+                          <a class="slider-control  slider-control__prev  position--absolute">
+                                <span class="slider-control--btn  position--absolute">
+                                  <i class="icon-left-arrow"></i>
+                                </span>
+                          </a>
+                          <a class="slider-control  slider-control__next  position--absolute">
+                                <span class="slider-control--btn  position--absolute">
+                                  <i class="icon-right-arrow"></i>
+                                </span>
+                          </a>
+                        </div>
+
+
+                    </div>
+
+                        <!-- End slider component -->
+
+                        <!-- Homepage social bar -->
+                            <div xk-section="v1" class="parbase social social-bar base">
+                    <div class="center--block  color-white">
+                    	<div class="layout--full pe--">
+                        	<div class="push-half--sides social-shares">
+
+			
+            	
+                                		<div class="push-third--right fb-like" data-href="https://www.facebook.com/CruGlobal" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+				
+
+			
+
+
+			
+                             		<a href="https://twitter.com/crutweets" class="twitter-follow-button  push-fourth--right" data-show-count="false" data-lang="en"></a>
+			
+
+                              	<div class="g-plusone" data-size="medium" data-annotation="none"></div>
+                    		 	<script type="text/javascript">
+                                	(function() {
+                                  		var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                                  		po.src = 'https://apis.google.com/js/platform.js';
+                                  		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                                	})();
+                              	</script>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+
+                        <!-- End hompage socail bar-->
+    
+
+    
+                        <!-- Primary wrapper for home page-->
+                        <div class="layout--wide">
+                            <div class="mt center-block  home-banner">
+                                <div xk-section="v1" class="parbase base section-title">
+
+                    <div class="section-title  center-block  masonry__item  grid__item">
+                    	<h2 class="section-title__item  banner-title  display--inline-block">
+			
+                    			Cru is a caring community passionate about connecting people to Jesus Christ
+		
+                    	</h2>
+	
+		
+                    			<div class="section-title__item  display--inline-block  inline-btn">
+                    				<a href="/about/what-we-do.html" class="button  button--secondary">Learn More</a>
+
+                    			</div>
+		
+	
+                    </div>
+                    </div>
+
+    
+                             </div>
+    
+                            <hr class="section-divider">
+                            <!-- Tiles -->
+                            <div  class="grid masonry-container"> <!--This and the following grid is using same markup as tile-components for the tiles-->
+                                <div class="tile-container-parsys parsys"><div xk-section="v1" class="single parbase tile base section">
+                    <div class="grid__item masonry__item desk--one-half  lap--one-half  one-whole">
+                        <div class="tile__item">
+			
+                            		<div>
+                    
+                                        <img src="http://cru.org/content/cru/us/en/_jcr_content/tile-container-parsys/tile.transform/CruHalf432x243/image.jpg" class="full-width" alt="Train and Grow">
+                    
+                                    </div>
+        	
+      
+        
+                            <h4>Train and Grow</h4>
+        
+      
+
+                              <p><a href="/train-and-grow/training/reach-your-world.html">How to share your faith</a><br>
+                    <a href="/train-and-grow/bible-studies.html">Bible studies &amp; small group materials</a><br>
+                    <a href="/train-and-grow/devotional-life.html">Daily devotionals</a><br>
+                    <a href="/train-and-grow/classics.html">Answer basic faith questions</a><br>
+                    <a href="/train-and-grow/evangelism.html">Tools for sharing your faith</a></p>
+
+ 		
+                        </div>
+                      </div>
+                    </div>
+                    <div xk-section="v1" class="single parbase tile base section">
+                    <div class="grid__item masonry__item desk--one-half  lap--one-half  one-whole">
+                        <div class="tile__item">
+			
+                            		<div>
+                    
+                                        <img src="http://cru.org/content/cru/us/en/_jcr_content/tile-container-parsys/tile_0.transform/CruHalf432x243/image.jpg" class="full-width" alt="Communities">
+                    
+                                    </div>
+        	
+      
+        
+                            <h4>Communities</h4>
+        
+      
+
+                              <p><a href="/highschool.html">High school</a><br>
+                    <a href="/communities/campus.html">College</a><br>
+                    <a href="/communities/athletes.html">Athletes</a><br>
+                    <a href="/communities/families.html">Families</a><br>
+                    <a href="/military.html">Military</a><br>
+                    <a href="/city.html">City</a></p>
+
+ 		
+                        </div>
+                      </div>
+                    </div>
+
+                    </div>
+
+                            </div>
+
+                            <hr class="section-divider">
+
+                             <!--Two large buttons. One for finder other for Start Relationship...-->
+                            <div class="grid  button-group  mb-">
+                                  <div class="desk--one-half grid__item">
+                       <div class="mb--">
+   	    
+                    	      <a href="/communities/locations.html" class="button button--primary full-width">Locate a Cru Ministry Near You</a>
+	    
+                       </div>
+                    </div>
+
+                                  <div class="desk--one-half grid__item">
+                       <div class="mb--">
+   	    
+                    	      <a href="/how-to-know-god/would-you-like-to-know-god-personally.html" class="button button--primary full-width">Start a Personal Relationship With Jesus</a>
+	    
+                       </div>
+                    </div>
+
+                            </div>
+
+                            <hr class="section-divider">
+
+                             <!--List items for the quasi site map and facebook iframe-->
+                             <div class="grid">
+                               <div class="grid__item one-whole desk--one-half">
+    
+                                 <div class="grid">
+                                     <div class="grid__item  lap--one-half desk--one-half">
+                                         <div xk-section="v1" class="home-page-curated-1 parbase base curated home-page-curated">
+
+                    	<h5 class="weight--semibold">Ministries by Location</h5>
+                       	<ul class="block-list mb">
+    	
+                        		<li><a href="/communities/locations/africa.html">Africa</a></li>
+		
+                        		<li><a href="/communities/locations/americas.html">Americas</a></li>
+		
+                        		<li><a href="/communities/locations/asia.html">Asia</a></li>
+		
+                        		<li><a href="/communities/locations/australia-and-oceania.html">Australia-Oceania</a></li>
+		
+                        		<li><a href="/communities/locations/europe.html">Europe</a></li>
+		
+                      	</ul>
+
+                    </div>
+
+                                         <div xk-section="v1" class="home-page-curated-2 parbase base curated home-page-curated">
+
+                    	<h5 class="weight--semibold">Ministries by Interest</h5>
+                       	<ul class="block-list mb">
+    	
+                        		<li><a href="/highschool.html">High School</a></li>
+		
+                        		<li><a href="/city.html">City</a></li>
+		
+                        		<li><a href="/campus.html">Campus</a></li>
+		
+                        		<li><a href="/communities/athletes.html">Athletes</a></li>
+		
+                        		<li><a href="/communities/families.html">Families</a></li>
+		
+                        		<li><a href="/communities/ministries.html">More</a></li>
+		
+                      	</ul>
+
+                    </div>
+
+                                     </div>
+                                     <div class="grid__item  lap--one-half desk--one-half">
+                                         <div xk-section="v1" class="parbase base curated home-page-curated home-page-curated-3">
+
+                    	<h5 class="weight--semibold">Ministries by Name</h5>
+                       	<ul class="block-list mb">
+    	
+                        		<li><a href="/communities/athletes.html">Athletes</a></li>
+		
+                        		<li><a href="/campus.html">Campus</a></li>
+		
+                        		<li><a href="/communities/ministries/christian-embassy-dc.html">Christian Embassy, D.C.</a></li>
+		
+                        		<li><a href="/communities/ministries/christian-embassy-united-nations.html">Christian Embassy – United Nations</a></li>
+		
+                        		<li><a href="/city.html">City</a></li>
+		
+                        		<li><a href="/military.html">Cru Military</a></li>
+		
+                        		<li><a href="/communities/ministries/faculty-and-graduates.html">Faculty &amp; Graduates</a></li>
+		
+                        		<li><a href="/communities/families.html">Families</a></li>
+		
+                        		<li><a href="/communities/ministries/gain.html">Global Aid Network</a></li>
+		
+                        		<li><a href="/highschool.html">High School</a></li>
+		
+                        		<li><a href="/communities/inner-city.html">Inner City</a></li>
+		
+                        		<li><a href="/communities/ministries/the-impact-movement.html">The Impact Movement</a></li>
+		
+                        		<li><a href="/communities/ministries/the-jesus-film-project.html">The JESUS Film Project®</a></li>
+		
+                        		<li><a href="/communities/ministries/josh-mcdowell-ministry.html">Josh McDowell Ministry</a></li>
+		
+                        		<li><a href="/communities/ministries/keynote.html">Keynote</a></li>
+		
+                      	</ul>
+
+                    </div>
+
+                                     </div>
+                                 </div> <!--end grid-->
+                               </div> <!--end grid__item-->
+                               <div class="grid__item  desk--one-half">
+                                    <div class="parsys home-section-container-parsys-2"><div xk-section="v1" class="parbase base socialmedia section">
+
+    
+                            <fb:like-box href="https://www.facebook.com/CruGlobal" width="426" show_faces="false" stream="true" header="false" border_color="white"></fb:like-box>
+    
+
+                    </div>
+
+                    </div>
+
+                               </div>
+    
+                             </div> <!--end grid-->
+                            <!-- End tiles -->
+                    	</div>
+                </div>
+                <!-- END PAGE CONTENT --> 
+                
+                <!-- Footer Component -->
+                <footer class="global-footer">
+                <hr class="section-divider">
+
+                <!-- Social wrapper -->
+                <div xk-section="v1" class="parbase socialLinks base social-links">
+                <div class="mb  masonry__item">
+                	<!-- Social -->
+                	<div class="social  center-block">
+                    	<ul class="nav">
+        	
+                            	<li>
+                                	<a class="social__item  social__item--twitter  icon-twitter" href="https://twitter.com/crutweets" rel="external"></a>
+                            	</li>
+        	
+        	
+                            	<li>
+                                	<a class="social__item  social__item--facebook  icon-facebook" href="https://www.facebook.com/CruGlobal" rel="external"></a>
+                            	</li>
+        	
+        	
+                            	<li>
+                                	<a class="social__item  social__item--gplus  icon-gplus" href="https://plus.google.com/116335191579496628831/posts" rel="external"></a>
+                            	</li>
+        	
+                    	</ul>
+                	</div>
+                	<!-- End social-->
+                </div>
+                <!-- End social wrapper -->
+                </div>
+
+                <!-- End social wrapper -->
+
+                <nav role="supplementary">
+                    <ul class="nav  flush--bottom">
+        
+                            <li>
+                              <a href="/about/contact-us.html">Contact Us</a>
+                            </li>
+        
+                            <li>
+                              <a href="/metadata/rss-feeds.html">RSS Feed</a>
+                            </li>
+        
+                            <li>
+                              <a href="/about/press.html">Press</a>
+                            </li>
+        
+                            <li>
+                              <a href="/opportunities/careers.html">Careers</a>
+                            </li>
+        
+                            <li>
+                              <a href="/about/terms-of-use.html">Terms of Use</a>
+                            </li>
+        
+                            <li>
+                              <a href="/about/privacy.html">Your Privacy</a>
+                            </li>
+        
+                    </ul>
+                </nav>
+
+
+                    <div class="copy">
+                      <small>©1994-2014 Cru. All Rights Reserved.</small>
+                    </div>
+
+                </footer>
+                <!-- End footer component -->
+            </section>
+            
+            
+            <aside class="off-canvas  off-canvas--left">
+                <ul role="navigation" class="block-list  m0">
+                    <li class="has-dropdown">
+                        <a href="#" class="site-nav__link">Train and Grow</a>
+                        <ul class="dropdown  drop-right">
+                            <li>
+                                <a href="#">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#">Link 4</a>
+                            </li>
+                            <li>
+                                <a href="#">Link 5</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="site-nav__link">How to Know God</a>
+                    </li>
+                    <li>
+                        <a href="#" class="site-nav__link">Communities</a>
+                    </li>
+                    <li>
+                        <a href="#" class="site-nav__link">Opportunities</a>
+                    </li>
+                    <li>
+                        <a href="#" class="site-nav__link">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="site-nav__link">Give</a>
+                    </li>
+                </ul>
+            </aside> 
+        </div>
+    </div>
+    
+</body>

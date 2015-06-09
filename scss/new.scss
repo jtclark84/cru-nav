@@ -1,0 +1,26 @@
+/**
+ * $LOCAL-IMPORTS
+ */
+@import "compass";
+@import "compass/css3";
+
+@import "vars";
+@import "generic/tools";
+@import "generic/mixins";
+@import "elements/fonts";
+@import "core/headings";
+@import "generic/helpers";
+
+$half-spacing-unit: round($base-spacing-unit / 2);
+
+.site-header{
+    @include box-shadow(0 0 2px rgba(6,8,8,0.15));
+}
+
+.options-title{
+    margin: $base-spacing-unit 0 $half-spacing-unit $base-spacing-unit;
+}
+
+.page__links-wrap{
+    display: none !important;
+}

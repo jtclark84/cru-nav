@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+  {% include flyout-head.html %}
+
+    <body class="page  page--mega-menu">
+        <div class="preload">
+        	<img src="/images/cru-logo.svg" alt="" width="0" height="0">
+        	<img src="/images/cru-logo.png" alt="" width="0" height="0">
+        </div>
+        <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="http://static.ak.facebook.com/connect/xd_arbiter/QjK2hWv6uak.js?version=41#channel=f2d32dc64&amp;origin=http%3A%2F%2Fwww.cru.org" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="https://s-static.ak.facebook.com/connect/xd_arbiter/QjK2hWv6uak.js?version=41#channel=f2d32dc64&amp;origin=http%3A%2F%2Fwww.cru.org" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+        <script>(function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=116517098374395&version=v2.0";
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+
+        <div class="off-canvas-wrap">
+            <div class="inner-wrap">
+
+    {% include mega-menu-header.html %}
+        
+      {{ content }}
+
+    {% include footer.html %}
+    
+    	</div><!-- End #js-inner-wrap -->
+      </div><!-- End #js-outer-wrap -->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
+
+        <script type="text/javascript" src="http://cru.org/etc/designs/cru/clientlibs.min.js"></script>
+    
+        <script type="text/javascript">    
+            $(document).ready(function(){
+                $(  ".level0" ).hover(function() {
+                    $( this ).delay( 1400 ).addClass( "is-active" );
+                    
+                    //$(".cover").fadeIn(200).show();
+                    $(".cover").show();
+                    
+                }, function() {
+                    $( this ).delay( 1400 ).removeClass( "is-active" );
+                    
+                    //$(".cover").fadeOut(200).hide();
+                    $(".cover").hide();
+                    
+                });
+            });     
+        </script>
+
+        <script src="{{ site.root }}js/menu-aim.js"></script>
+        
+        <script>
+            var $menu = $(".menu-dropdown__content");
+        
+            $menu.menuAim({
+                activate: activateSubmenu,
+                deactivate: deactivateSubmenu,
+                exitMenu: function(){
+                    return true;
+                }
+            });
+        
+            function activateSubmenu(row) {
+               var $row = $(row),
+                   //submenuClass = $row.find("submenuClass"),
+                   $submenu = $row.find(".menu-submenu").first(),
+                   height = $menu.outerHeight(),
+                   width = $menu.outerWidth();
+                   
+                   console.log($submenu);
+               
+               // Show the submenu
+               $submenu.css({
+                   display: "block",
+               });
+
+               // Keep the currently activated row's highlighted look
+               $row.find(".nav-cat").addClass("maintain-hover");
+               //$row.parent(".menu-dropdown__content").first().addClass("submenu-open");
+           }
+
+           function deactivateSubmenu(row) {
+               var $row = $(row),
+                   //submenuClass = $row.data("submenuClass"),
+                   $submenu = $row.find(".menu-submenu").first();
+
+               // Hide the submenu and remove the row's highlighted look
+               $submenu.css("display", "none");
+               $row.find(".nav-cat").removeClass("maintain-hover");
+               $row.find(".nav-cat").removeClass("maintain-hover");
+               
+               //$row.parent(".menu-dropdown__content").first().removeClass("submenu-open");
+           }
+        </script>
+    
+    </body>
+</html>

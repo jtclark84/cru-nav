@@ -1,0 +1,54 @@
+/*------------------------------------*\
+    $NAVIGATION
+\*------------------------------------*/
+$nav-break-min: 981px;
+$nav-break-max: 980px;
+
+.navigation{
+    position: relative;
+    overflow: hidden;
+    
+    width: 240px;
+}
+
+.search{
+  height: auto;
+  line-height: 1.5;
+}
+
+
+#search_options{
+  z-index: 501;
+  top: 31px;
+
+  background-color: #ffffff;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+#user-actions{
+  position: absolute;
+  right: 220px;
+
+  margin: 0;
+
+
+  & > li{
+    display: block;
+    float: left;
+
+    & > a{
+      display: block;
+      color: #8a8a8a;
+
+      padding: 0 10px;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.9px;
+    }
+  }
+}
+
+#toolbar form {
+  border-radius: 2px;
+}

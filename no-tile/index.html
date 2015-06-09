@@ -1,0 +1,578 @@
+<head>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/restangular/1.3.1/restangular.min.js"></script>
+    <script src="//platform.twitter.com/widgets.js" id="twitter-wjs" ></script>
+
+    <!-- Load Stylesheets and fonts -->
+    <script type="text/javascript">
+    	(function() {
+        var config = {
+        kitId: 'usb5wjy',
+        scriptTimeout: 3000
+        };
+        var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+        })();
+    </script>     
+    
+    <link rel="stylesheet" type="text/css" href="../css/screen.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/new.css"/>
+
+</head>
+<body class="page  page--no-tile" ng-app="ngToggle">
+    <div class="preload">
+    	<img src="/images/cru-logo.svg" alt="" width="0" height="0">
+    	<img src="/images/cru-logo.png" alt="" width="0" height="0">
+    </div>
+
+    <div class="off-canvas-wrap">
+        <div class="inner-wrap">
+            <a class="toggle-nav">Toggle Nav</a>
+            
+            <!-- TITLE BAR -->
+        <div class="site-header">
+
+                
+                <!-- TITLE GROUP -->
+                <hgroup class="title-group  site-logo  js-nav-toggle">
+                    <a href="#" title="Return to Homepage">
+                        <h1>
+                            <span class="accessibility">
+                                Cru is a caring community passionate about connecting people to Jesus Christ
+                            </span>
+                        </h1>
+                    </a>
+                </hgroup>
+                 <!-- END TITLE GROUP -->
+                 
+                <!-- SITE SEARCH -->
+                <div class="site-search">
+                    <form class="m0">
+                        <fieldset class="m0">
+                            <ul class="nav  bare-list">
+                                <li>
+                                    <input type="search" class="form-control"></input>
+                                </li>
+                                <li>
+                                     <input type="submit" value="Search"  class="button button--subtle  button--small"></input>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </form>
+                </div>
+                <!-- END SITE SEARCH -->
+                
+            </div>
+            <!-- END TITLE BAR -->
+            
+            <section role="main" class="site-main">
+                <!-- SITE NAV -->
+                <nav class="site-nav-wrap">
+                    <ul role="navigation" class="site-nav  block-list  m0">
+                        
+                        <li class="level0  has-submenu  opportunities" data-submenu-class="submenu-0">
+                                                       
+                            <a href="#" class="level0__menu-link  menu-link active">
+                                Opportunities
+                                <i class="icon-right-arrow"></i>
+                            </a>
+                            
+                            <div class="site-nav__submenu  submenu-0" style="height: 492px;">
+                               <!-- <img src="http://g-ecx.images-amazon.com/images/G/01/digital/music/merch/weeklybuild/101414/U2_101414_Whitebelt_Flyout._V323882074_.png" usemap="#nav_imgmap_digital-music" class="nav-browse-promo" style="bottom: -38px; right: -21px; width: 520px; height: 492px;">
+                               <map name="nav_imgmap_digital-music" id="nav_imgmap_digital-music">
+                                    <area shape="poly" coords="238,2,226,233,154,258,115,281,2,281,1,453,497,455,497,1" href="/dp/B00NX53H2W/ref=nav_sa_dm_u2_dp_wb" alt="U2"> -->
+                                </map>
+                                <ul class="nav-submenu__group  level1  block-list  m0  position--absolute">                                                                            <li>
+                                        <a href="#" class="nav-cat">Mission Trips</a>
+                                    </li>
+
+                                    <li class="nav-divider-before">
+                                        <a href="#" class="nav-cat">Careers</a>   
+                                        <ul class="block-list  level2">
+                                            <li><a href="#" class="nav-cat--sub">Hourly & Salaried Positions at Our World Headquarters</a></li>
+                                            <li><a href="#" class="nav-cat--sub">World Headquarters Opportunities</a></li>
+                                            <li><a href="#" class="nav-cat--sub">Missionary Staff Careers</a></li>
+                                            <li><a href="#" class="nav-cat--sub">International Missions Opportunities</a></li>
+                                            <li><a href="#" class="nav-cat--sub">Staff Profiles</a></li>
+                                        </ul>        
+                                    </li>
+                                    
+                                    <li class="nav-divider-before">
+                                        <a href="#" class="nav-cat">Internships</a>
+                                        <ul class="block-list  level2">
+                                            <li><a href="#" class="nav-cat--sub">Orlando Summer Project</a></li>
+                                            <li><a href="#" class="nav-cat--sub">Preview Weekend</a></li>
+                                            <li><a href="#" class="nav-cat--sub">1-Year Internship in Orlando</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="nav-submenu__group  level1  cat-2  block-list  m0  position--absolute">
+                                    <li>
+                                        <a href="#" class="nav-cat">Volunteer</a>
+                                        <ul class="block-list  level2">
+                                            <li><a href="#" class="nav-cat--sub">Contact Us</a></li>
+                                            <li><a href="#" class="nav-cat--sub">Orlando Openings</a></li>
+                                            <li><a href="#" class="nav-cat--sub">Volunteer Profiles</a></li>
+                                            <li><a href="#" class="nav-cat--sub">Volunteer Sign Up</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        
+                        
+                        <li class="level0  has-submenu  know-god" data-submenu-class="submenu-1">
+                            <a href="#" class="level0__menu-link  menu-link">
+                                How to Know God
+                                <i class="icon-right-arrow"></i>
+                            </a>                            
+                            <div class="site-nav__submenu  submenu-1" style="width:460px;">
+                                <ul class="nav-submenu__group  block-list  m0  position--absolute">                           
+                                    <li>
+                                        <a href="#" class="nav-cat"  id="nav-cat-0">How to Know God Personally</a>           
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">My Story: A Life Changed</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">Jesus and the Intellectual</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">Jesus: God or Just a Good Man?</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">Why the Resurrection Matters to You</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        
+                        <li class="level0  has-submenu  communities" data-submenu-class="submenu-2">
+                                                       
+                            <a href="#" class="level0__menu-link  menu-link">
+                                Train & Grow
+                                <i class="icon-right-arrow"></i>
+                            </a>
+                            
+                            <div class="site-nav__submenu  submenu-2" style="width:460px;">
+                                <ul class="nav-submenu__group  block-list  m0  position--absolute">                           
+                                    <li>
+                                        <a href="#" class="nav-cat"  id="nav-cat-0">Classics</a>           
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">Bible Studies</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">Training</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">Evangelism</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">Prayer, Quiet Times, Devotionals</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">Evangelism without a bullhorn</a>
+                                    </li>
+                                </ul>
+                            </div>                            
+                        </li>
+                        
+                        
+                        <li class="level0  has-submenu  communities" data-submenu-class="submenu-3">
+                                                       
+                            <a href="#" class="level0__menu-link  menu-link">
+                                Communities
+                                <i class="icon-right-arrow"></i>
+                            </a>
+                            
+                            <div class="site-nav__submenu  submenu-3"  style="width:460px;" id="train-grow">
+                                <ul class="nav-submenu__group  block-list  m0  position--absolute">                           
+                                    <li>
+                                        <a href="#" class="nav-cat"  id="nav-cat-0">Campus</a>           
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">City</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">Inner City</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">Athletes</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">Families</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">High School</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">Military</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">Locate Cru Near You</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">Families</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">More</a>
+                                    </li>                                    
+                                </ul>
+                            </div>  
+                        </li>
+                        <li class="level0  has-submenu  about" data-submenu-class="submenu-4">
+                           <a href="#" class="level0__menu-link  menu-link">
+                               About
+                               <i class="icon-right-arrow"></i>
+                           </a>
+                           <div class="site-nav__submenu  submenu-4" style="width:460px;">
+                               <ul class="nav-submenu__group  block-list  m0  position--absolute">                           
+                                   <li>
+                                       <a href="#" class="nav-cat"  id="nav-cat-0">Donor Relations</a>           
+                                   </li>
+                                   <li>
+                                       <a href="#" class="nav-cat">What We Do</a>
+                                   </li>
+                                   <li>
+                                       <a href="#" class="nav-cat">Our Leadership</a>
+                                   </li>
+                                   <li>
+                                       <a href="#" class="nav-cat">Contact Us</a>
+                                   </li>
+                                   <li>
+                                       <a href="#" class="nav-cat">Press</a>
+                                   </li>
+                                   <li>
+                                       <a href="#" class="nav-cat">World Wide Challenge</a>
+                                   </li>
+                               </ul>
+                           </div>
+                        </li>
+                            
+                        <li class="level0  has-submenu  store" data-submenu-class="submenu-5">
+                            <a href="#" class="level0__menu-link  menu-link">
+                                Store
+                                <i class="icon-right-arrow"></i>
+                            </a>                            
+                            <div class="site-nav__submenu  submenu-5" style="width:460px;">
+                                <ul class="nav-submenu__group  block-list  m0  position--absolute">                           
+                                    <li>
+                                        <a href="#" class="nav-cat"  id="nav-cat-0">All Stores</a>           
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-cat">Featured Products</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="level0  give">
+                            <a href="#" class="level0__menu-link  menu-link">
+                                Give
+                            </a>                            
+                        </li>
+                        
+                    </ul>
+                </nav>
+                <!-- END SITE NAV -->
+                
+                <!-- PAGE CONTENT --> 
+                <div class="page-content-wrap">
+                    <ul class="toolbar nav">
+                        <li class="toolbar__item  js-dropdown" ng-controller="AppCtrl">
+                            <a href="#" class="toolbar__link">Mission Trips
+                                <span class="caret"></span>
+                                <span class="accessibility">Toggle Dropdown</span>
+                            </a>
+                            <div class="dropdown-container" ng-hide="custom">
+                                <ul class="dropdown drop-down block-list">
+                                    <li>Jesus Film Opportunities</li>
+                                    <li>International Trips</li>
+                                    <li>Gain Trips</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!--
+                        <div class="button-group  js-dropdown" ng-controller="AppCtrl">
+                             <a href="#" class="button  button--subtle  button--small">Resources</a>
+                             <a href="#" class="button  button--subtle  button--small  dropdown-toggle  js-dropdown-toggle" ng-click="toggleCustom()">
+                                 <span class="caret"></span>
+                                 <span class="accessibility">Toggle Dropdown</span>
+                             </a>                               
+                             <div class="dropdown-container" ng-hide="custom">
+                                <ul class="dropdown drop-down block-list">
+                                     <li>Discover God's Character E-Devotionals</li>
+                                     <li>Personal Guide to Fasting</li>
+                                     <li>7 Steps to Fasting</li>
+                                     <li>Advent</li>
+                                     <li>Lent</li>
+                                     <li>Today's Promise</li>
+                                 </ul>
+                             </div>
+                         
+                        </div>
+                        <div class="button-group">
+                            <a href="#" class="button  button--subtle  button--small">and More Stuff</a>
+                        </div>
+                            -->
+                        <li class="toolbar__item">
+                            <a class="toolbar__link">Summer Missions</a>
+                        </li>
+                    </ul>
+                    <div class="page-content">
+                        
+                        <header class="page-title-bar  layout--wide">
+                            <h1 class="page__title h3">Summer Missions</h1>
+                            <nav class="nav-tabs">
+                                <ul class="nav-tabs__list  nav m0">
+                                    <li class="nav-tabs__item">
+                                        <a href="#" class="nav-tabs__link">Learn</a>
+                                    </li>
+                                    <li class="nav-tabs__item">
+                                        <a href="#" class="nav-tabs__link">Explore</a>
+                                    </li>
+                                    <li class="nav-tabs__item">
+                                        <a href="#" class="nav-tabs__link">Plan</a>
+                                    </li>
+                                    <li class="nav-tabs__item">
+                                        <a href="#" class="nav-tabs__link">Apply</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </header>
+
+                        <div class="post-article  post__body">
+                            <div class="layout--wide">
+                                <figure>
+                                    <img src="http://www.cru.org/content/cru/us/en/opportunities/mission-trips/summer/_jcr_content/content-parsys/tile.transform/Cru704x396/image.jpg"></img>      
+                                </figure>
+                                <h3 class="text--center">Let's do something extraordinary this summer.</h3>
+                            
+                            </div>    
+                            <div class="layout-single-column">   
+                                <p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+                                <p>Aenean lacinia bibendum nulla sed consectetur. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                                <p>Nullam quis risus eget urna mollis ornare vel eu leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p>Nulla vitae elit libero, a pharetra augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia bibendum nulla sed consectetur. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui.</p>
+                                <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                                <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- END PAGE CONTENT --> 
+                
+                <!-- Footer Component -->
+                <footer class="global-footer">
+                <hr class="section-divider">
+
+                <!-- Social wrapper -->
+                <div xk-section="v1" class="parbase socialLinks base social-links">
+                <div class="mb  masonry__item">
+                	<!-- Social -->
+                	<div class="social  center-block">
+                    	<ul class="nav">
+        	
+                            	<li>
+                                	<a class="social__item  social__item--twitter  icon-twitter" href="https://twitter.com/crutweets" rel="external"></a>
+                            	</li>
+        	
+        	
+                            	<li>
+                                	<a class="social__item  social__item--facebook  icon-facebook" href="https://www.facebook.com/CruGlobal" rel="external"></a>
+                            	</li>
+        	
+        	
+                            	<li>
+                                	<a class="social__item  social__item--gplus  icon-gplus" href="https://plus.google.com/116335191579496628831/posts" rel="external"></a>
+                            	</li>
+        	
+                    	</ul>
+                	</div>
+                	<!-- End social-->
+                </div>
+                <!-- End social wrapper -->
+                </div>
+
+                <!-- End social wrapper -->
+
+                <nav role="supplementary">
+                    <ul class="nav  flush--bottom">
+        
+                            <li>
+                              <a href="/about/contact-us.html">Contact Us</a>
+                            </li>
+        
+                            <li>
+                              <a href="/metadata/rss-feeds.html">RSS Feed</a>
+                            </li>
+        
+                            <li>
+                              <a href="/about/press.html">Press</a>
+                            </li>
+        
+                            <li>
+                              <a href="/opportunities/careers.html">Careers</a>
+                            </li>
+        
+                            <li>
+                              <a href="/about/terms-of-use.html">Terms of Use</a>
+                            </li>
+        
+                            <li>
+                              <a href="/about/privacy.html">Your Privacy</a>
+                            </li>
+        
+                    </ul>
+                </nav>
+
+
+                    <div class="copy">
+                      <small>©1994-2014 Cru. All Rights Reserved.</small>
+                    </div>
+
+                </footer>
+                <!-- End footer component -->
+                
+            </section>
+            
+            
+            <aside class="off-canvas  off-canvas--left">
+                <ul role="navigation" class="block-list  m0">
+                    <li class="has-dropdown">
+                        <a href="#" class="site-nav__link">Train and Grow</a>
+                        <ul class="dropdown  drop-right">
+                            <li>
+                                <a href="#">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#">Link 4</a>
+                            </li>
+                            <li>
+                                <a href="#">Link 5</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="site-nav__link">How to Know God</a>
+                    </li>
+                    <li>
+                        <a href="#" class="site-nav__link">Communities</a>
+                    </li>
+                    <li>
+                        <a href="#" class="site-nav__link">Opportunities</a>
+                    </li>
+                    <li>
+                        <a href="#" class="site-nav__link">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="site-nav__link">Give</a>
+                    </li>
+                </ul>
+            </aside> 
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+        var sticky = document.querySelector('.toolbar');
+        var elem = document.querySelector('html');
+        var origOffsetY = sticky.offsetTop;
+
+        function onScroll(e) {
+          window.scrollY >= origOffsetY ? elem.classList.add('js-stick') :
+                                          elem.classList.remove('js-stick');
+        }
+
+        document.addEventListener('scroll', onScroll);
+    </script>
+    <script type="text/javascript">
+        /*
+        $(document).ready(function(){
+            $( ".js-dropdown-toggle" ).click(function() {                
+              $( ".js-dropdown" ).toggleClass( "selected");
+            });
+        });
+            */
+        
+        $(document).ready(function(){
+            $( ".toggle-nav" ).click(function() {                
+              $( ".off-canvas-wrap" ).toggleClass( "move-right");
+            });
+        });
+        
+        angular.module('ngToggle', [])
+            .controller('AppCtrl',['$scope', function($scope){
+                $scope.custom = true;
+                $scope.toggleCustom = function() {
+                    $scope.custom = $scope.custom === false ? true: false;
+                };
+        }]);
+    </script>
+    <script type="text/javascript">
+        var sticky = document.querySelector('.site-nav');
+        var elem = document.querySelector('html');
+        var origOffsetY = sticky.offsetTop;
+
+        function onScroll(e) {
+          window.scrollY >= origOffsetY ? elem.classList.add('js-stick') :
+                                          elem.classList.remove('js-stick');
+        }
+
+        document.addEventListener('scroll', onScroll);
+    </script>
+
+    <script src="../js/menu-aim.js"></script>
+    <script>
+        var $menu = $(".site-nav");
+        
+        $menu.menuAim({
+            activate: activateSubmenu,
+            deactivate: deactivateSubmenu,
+            exitMenu: function(){return true;}
+        });
+        
+        function activateSubmenu(row) {
+           var $row = $(row),
+               submenuClass = $row.data("submenuClass"),
+               $submenu = $("." + submenuClass),
+               height = $menu.outerHeight(),
+               width = $menu.outerWidth();
+               
+               console.log("activate");    
+
+           // Show the submenu
+           $submenu.css({
+               display: "block",
+           });
+
+           // Keep the currently activated row's highlighted look
+           $row.find(".level0__menu-link").addClass("maintain-hover");
+       }
+
+       function deactivateSubmenu(row) {
+           var $row = $(row),
+               submenuClass = $row.data("submenuClass"),
+               $submenu = $("." + submenuClass);
+
+           // Hide the submenu and remove the row's highlighted look
+           $submenu.css("display", "none");
+           $row.find(".level0__menu-link").removeClass("maintain-hover");
+           
+           console.log("deactivate");    
+       }
+       
+       
+    </script>
+    
+</body>

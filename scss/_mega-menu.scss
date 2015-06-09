@@ -1,0 +1,23 @@
+.nav-item {
+    padding: 4px 10px;
+}
+
+.nav-cat{
+    font-weight: bold;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    display: block;
+}
+
+
+.has-submenu ul{
+    margin-left: 4px;
+}
+
+.has-submenu:before, .has-submenu:hover:before{
+    display: none !important;
+}
+
+.page__links-wrap{
+    display: none !important;
+}

@@ -1,0 +1,261 @@
+@if $use-buttons == true{
+/*------------------------------------*\
+    $Buttons
+\*------------------------------------*/	
+/**
+ * Base button styles
+ */
+%button, 
+.button {   
+    display: inline-block;	
+	font-weight: 500;
+    line-height: 1.42857143;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-align: center;
+
+	cursor: pointer;
+    background-image: none;
+	border: 2px solid transparent;
+    
+    
+    @include rem-calc(padding, 6px 18px);
+    @include font-size($btn-font-size, false);	
+    @include user-select(none);
+    @include border-radius($base-border-radius);
+    
+
+	/**
+	 * Button size modifiers
+	 *
+	 * These all follow the same sizing rules as above; text is 1em, space around it
+     * remains uniform.
+	 */    
+	&--small{               
+        font-size: 14px;
+        line-height: 1.5;
+        @include border-radius(3px);
+        @include rem-calc(padding, 5px 10px);
+	}
+
+	&--large{
+        font-size: 18px;
+		line-height: 1.33;
+        @include rem-calc(padding, 10px 16px);
+	}
+    
+ 	/**
+ 	 * These buttons will fill the entirety of their container.
+ 	 *
+ 	 * 1. Remove padding so that widths and paddings don’t conflict.
+ 	 */
+ 	&--full{
+ 	    width: 100%;
+ 	    padding-right:0;            /* [1] */
+ 	    padding-left: 0;            /* [1] */
+ 	    text-align:center;
+ 	}
+
+	/**
+	 * Button font-size modifiers.
+	 */
+	&--alpha{
+		@include rem-calc(font-size, 30px);		
+	}
+
+	&--beta{
+		@include rem-calc(font-size, 24px);	
+	}
+
+	&--gamma{
+		@include rem-calc(font-size, 16px);		
+	}
+    
+	/**
+	 * Positive actions; e.g. sign in, purchase, submit, etc.
+	 */
+	&--positive{
+	    background-color: $btn-positive-bg;
+		border-color: darken($btn-positive-bg, 10%);
+	
+		&, 
+		&:hover,
+		&:focus,
+		&:active, 
+		&:visited {
+			@extend %text--white;
+		}
+
+		&:hover{
+			background-color: darken($btn-positive-bg, 10%);
+		}
+	}
+
+	/**
+	 * Negative actions; e.g. close account, delete photo, remove friend, etc.
+	 */
+	&--negative{
+	    background-color: $btn-negative-bg;
+		border-color: darken($btn-negative-bg, 10%);
+	
+	
+		&, 
+		&:hover,
+		&:focus,
+		&:active, 
+		&:visited {
+	    	@extend %text--white;
+		}
+
+		&:hover{
+			background-color: darken($btn-negative-bg, 10%);
+		}
+	}
+
+	/**
+	 * Inactive, disabled buttons.
+	 */
+	&--inactive {
+		&, 
+		&:hover, 
+		&:active, 
+		&:focus{
+			@extend %btn--inactive;
+		}
+    }
+}
+
+.button-group{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    
+    & + .button-group{
+        margin-left: 10px;     
+    }
+    
+    & > .button{
+        position: relative;
+        float: left;
+    }
+    
+    
+    & > .button:first-child:not(:last-child):not(.button--dropdown) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    & > .button:last-child:not(:first-child){
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    
+    & > .button--dropdown:not(:first-child){
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    
+    .button + .dropdown-toggle{
+        padding-right: 8px;
+        padding-left: 8px;
+        margin-left: -1px;
+    }
+}
+
+.button .caret{
+    margin-left: 0;
+}
+
+    .caret{
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin-left: 2px;
+        vertical-align: middle;
+        border-top: 4px solid;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+    }
+
+
+	/**
+	 * Base button states
+	 */
+	%button,
+	.button {
+		
+		&, 
+		&:hover,
+		&:focus,
+		&:active, 
+		&:visited {
+			color: $btn-default-color;
+			text-decoration: none;
+		}
+
+		&:hover{
+			background-color: darken($btn-default-bg, 10%);
+			box-shadow: 0 0 1px rgba(0, 0, 0, .3);
+		}
+
+		&:active,
+		&:focus{
+		    outline:none;
+		    box-shadow:0 0 2px rgba(0, 0, 0, .3) inset;
+		}
+
+		&:focus {
+			@include tab-focus;
+		}
+
+		&:active{
+			background-image: none;
+		}
+		
+		&::-moz-focus-inner { 
+	        border: 0;
+	        padding: 0;
+		}
+		  
+		  
+	}
+
+	
+	
+	
+	
+	
+	/**
+	 * Button Functions
+	 */
+	
+	/**
+	 * Use to extend the inactive/disabled states: sass cannot extend a
+	 * nested property so this is a temporary hack
+	 *
+	 * 1. Make the button look like normal text when hovered.
+	 */
+	%btn--inactive{
+        background-color:#ddd;
+        color: #777 !important;
+        cursor: text;         /* [1] */
+        box-shadow:none;
+	}
+	
+	
+	button[disabled],
+	input[disabled], 
+	.button--disabled{	
+		&, 
+		&:hover, 
+		&:active, 
+		&:focus {
+			@extend %btn--inactive;
+	        cursor: not-allowed;       
+			
+		}
+    }
+	
+
+
+
+}//endif

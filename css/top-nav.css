@@ -1,0 +1,1481 @@
+@charset "UTF-8";
+/**
+ * $LOCAL-IMPORTS
+ */
+/*------------------------------------*\
+    VARS.SCSS
+\*------------------------------------*/
+/**
+ * Any variables you find set in brackets.css’ `_vars.scss` that you do not wish to
+ * keep, simply redefine here. This means that if brackets.css, for example, sets
+ * your `$base-font-size` at 16px and you wish it to be 14px, simply redeclare
+ * that variable in this file. Brackets.css ignores its own variables in favour of
+ * using your own, so you can completely modify how brackets.css works without ever
+ * having to alter the framework itself.
+ */
+/**
+ * Place any variables that should override brackets.css’ defaults here.
+ */
+/**
+ * Would you like to show a baseline grid? This is handy during development.
+ */
+/*------------------------------------*\
+    $BORDER-BOX
+\*------------------------------------*/
+/**
+ * Do you want all elements to adopt `box-sizing:border-box;` as per
+ * paulirish.com/2012/box-sizing-border-box-ftw ?
+ */
+/*------------------------------------*\
+    $BASE
+\*------------------------------------*/
+/**
+ * Base font family
+ */
+/**
+ * Default colours for objects’ borders etc.
+ */
+/**
+ * Default value for edges and such
+ */
+/*------------------------------------*\
+    $TYPOGRAPHY
+\*------------------------------------*/
+/**
+ * Basic font sizes
+ */
+/**
+ * Headings
+ */
+/* Header sizes */
+/* Subheaders */
+/**
+ * Smalls
+ */
+/**
+ * Paragraphs
+ */
+/**
+ * Blockquotes
+ */
+/*------------------------------------*\
+    $GRID
+\*------------------------------------*/
+/**
+ * This grid system is heavily based off the work of Harry Roberts of
+ * css-wizardry and inuit.css. Css-wizardry-grids provides the basic
+ * foundation and inspiration.
+ */
+/**
+ * If you are building a non-responsive site but would still like to use
+ * the girds, set this to ‘false’:
+ */
+/**
+ * Is this build mobile first? Setting to ‘true’ means that all grids will be
+ * 100% width if you do not apply a more specific class to them.
+ */
+/**
+ * Set the max width of your grids, if you set this to false, the wrapper will only
+ * center the content and apply a left/right padding
+ */
+/**
+ * Set the spacing between your grid items.
+ */
+/**
+ * Would you like push and pull classes enabled? Keep in mind this adds a large
+ * amount of additional code
+ */
+/**
+ * Using `inline-block` means that the grid items need their whitespace removing
+ * in order for them to work correctly. Set the following to true if you are
+ * going to achieve this by manually removing/commenting out any whitespace in
+ * your HTML yourself.
+ *
+ * Setting this to false invokes a hack which cannot always be guaranteed,
+ * please see the following for more detail:
+ *
+ * github.com/csswizardry/csswizardry-grids/commit/744d4b23c9d2b77d605b5991e54a397df72e0688
+ * github.com/csswizardry/inuit.css/issues/170#issuecomment-14859371
+ */
+/**
+ * Define your breakpoints. The first value is the prefix that shall be used for
+ * your classes (e.g. `.palm--one-half`), the second value is the media query
+ * that the breakpoint fires at.
+ */
+/**
+ * Define which namespaced breakpoints you would like to generate for each of
+ * widths, push and pull. This is handy if you only need pull on, say, desk, or
+ * you only need a new width breakpoint at mobile sizes. It allows you to only
+ * compile as much CSS as you need. All are turned on by default, but you can
+ * add and remove breakpoints at will.
+ *
+ * Push and pull shall only be used if `$push` and/or `$pull` and `$responsive`
+ * have been set to ‘true’.
+ */
+/*------------------------------------*\
+    $LINKS
+\*------------------------------------*/
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+/**
+ * I have included variables for only one buttons, the default, since my wish
+ * is to not impose style. Feel free to add more variables. I have included 
+ * a mixin to help you generate these easily
+ */
+/*------------------------------------*\
+    $COMPONENTS
+\*------------------------------------*/
+/**
+ * These variables are framework variables, sourced from variables defined
+ * above. Feel free to use these variables throughout your project, but do not
+ * modify or reassign them.
+ */
+/*------------------------------------*\
+    $PROJECT-MODES
+\*------------------------------------*/
+/**
+ * This allows you to use debug settings which can be useful in
+ * development.
+ *
+ * Make sure to set this to false before using the code for production.
+ */
+/*------------------------------------*\
+    $OBJECTS-AND-ABSTRACTIONS
+\*------------------------------------*/
+/**
+ * All of brackets.css’ objects and abstractions are initially turned off by
+ * default. This means that you start any project with as little as possible,
+ * and introducing objects and abstractions is as simple as switching the
+ * following variables to `true`.
+ */
+/*------------------------------------*\
+    $OVERRIDES
+\*------------------------------------*/
+/*------------------------------------*\
+    $CUSTOM
+\*------------------------------------*/
+/**
+ * Place any of your own variables that sit on top of brackets.css here.
+ */
+/*------------------------------------*\
+    $Fonts
+\*------------------------------------*/
+/*------------------------------------*\
+    $Color Palette
+\*------------------------------------*/
+/**
+ * Primary colors
+ */
+/* Cru Gold */
+/* Cru Gray */
+/* White */
+/**
+ * Secondary colors
+ */
+/* Cru Orange */
+/**
+ * Accent colors
+ */
+/* Cru Bright Blue */
+/* Cru Deep Blue */
+/**
+ * Grayscale
+ */
+/**
+ * Additional Colors
+ */
+/*------------------------------------*\
+    $BUTTON SETTINGS
+\*------------------------------------*/
+/*------------------------------------*\
+    $URL PATHS
+\*------------------------------------*/
+/*------------------------------------*\
+    $ANIMATIONS
+\*------------------------------------*/
+/*------------------------------------*\
+    $ADDITIONAL
+\*------------------------------------*/
+/*------------------------------------*\
+    $TOOLS
+\*------------------------------------*/
+/**
+ * We will begin by importing functions that will be used in the
+ * framework. There is no need to change any of these functions
+ */
+/**
+ * This allows us to use the rem-calc mixin for shorthand 
+ * conversions.
+ */
+/**
+ * Use this em function instead of the other
+ */
+/*------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+/**
+ * These mixins are for the library to use only, you should not need to modify
+ * them at all. 
+ */
+/*------------------------------------*\
+    $MIXINS/ALERTS
+\*------------------------------------*/
+/**
+ * Animations
+ */
+/*------------------------------------*\
+    $MIXINS/BUTTONS
+\*------------------------------------*/
+/**
+ * Border Radius
+ */
+/* Top-Left Corner */
+/* Top-Right Corner Only*/
+/* Bottom-Left Corner Only */
+/* Bottom-Right Corner Only */
+/* Both Top Corners */
+/* Both Right Corners */
+/* Both Bottom Corners */
+/* Both Left Corners */
+/*------------------------------------*\
+    $MIXINS/BOX-MODEL
+\*------------------------------------*/
+/**
+ * Box Sizing
+ */
+/*------------------------------------*\
+    $MIXINS/BUTTONS
+\*------------------------------------*/
+/**
+ * Button Varients
+ */
+/**
+ * Button Effects: use with btn
+ */
+/**
+ * Button Sizes
+ */
+/*------------------------------------*\
+    $MIXINS/CENTER-BLOCK
+\*------------------------------------*/
+/**
+ * Center-align a block level element
+ */
+/*------------------------------------*\
+    $MIXINS/CLEARFIX
+\*------------------------------------*/
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ * 
+ *  Source: http://nicolasgallagher.com/micro-clearfix-hack/
+ */
+/**
+ * The newest clearfix: Unsure about support
+ */
+/*------------------------------------*\
+    $MIXINS/FORMS
+\*------------------------------------*/
+/**
+ * Form control sizing
+ *
+ * Relative text size, padding, and border-radii changes for form controls. For
+ * horizontal sizing, wrap controls in the predefined grid classes. `<select>`
+ * element gets special love because it's special, and that's a fact!
+ * [converter] $parent hack
+ */
+/*------------------------------------*\
+    $MIXINS/GRID-SETUP
+\*------------------------------------*/
+/**
+ * Enclose a block of code with a media query as named in `$breakpoints`.
+ */
+/*------------------------------------*\
+    $MIXINS/IMAGES
+\*------------------------------------*/
+/** 
+ * Responsive image
+ *
+ * Keep images from scaling beyond the width of their parents.
+ */
+/*------------------------------------*\
+    $MIXINS/LINKS
+\*------------------------------------*/
+/**
+ * Writes the typical link, button in one go
+ * Includes active and focus for accessibility 
+ * 
+ */
+/*------------------------------------*\
+    $MIXINS/MEDIA-QUERY
+\*------------------------------------*/
+/**
+ * Media query for easy breakpoint. Use pixel width with or without units
+ * and it will convert to em 
+ */
+/**
+ * Set $query1: max for a max-qidth query, defaults to min-width
+ */
+/*------------------------------------*\
+    $MIXINS/MESSAGE
+\*------------------------------------*/
+/*------------------------------------*\
+    $MIXINS/PANELS
+\*------------------------------------*/
+/*------------------------------------*\
+    $MIXINS/PREFIX
+\*------------------------------------*/
+/**
+ * Create vendor-prefixed CSS in one go, e.g.
+ *
+   `@include vendor(border-radius, 4px);`
+ *
+ */
+/*------------------------------------*\
+    $MIXINS/SIZING
+\*------------------------------------*/
+/**
+ * Can handle shorthand calculations
+ * Do not change the variable set
+ * http://hugogiraudel.com/2013/03/18/ultimate-rem-mixin/
+ */
+/**
+ * Space elements by an amount based on your magic number. Pass in the property
+ * to be indented as a paramater, e.g.:
+ *
+ * pre {
+ *    @include spacing(padding-left);
+ * }
+ */
+/*------------------------------------*\
+    $MIXINS/SPACING
+\*------------------------------------*/
+/**
+ *  Calculates any number of margins and paddings in one swoop
+ * 
+ * Running this is as easy 
+ * @include vertical-calc(1, 12) {}
+ *
+ * DO NOT USE AT THE MOMENT
+ */
+/*------------------------------------*\
+    $MIXINS/TEXT
+\*------------------------------------*/
+/**
+ * Quickly generate a font-size in rems, with a pixel fallback, based on the
+ * value we pass into the mixin, e.g.:
+ *
+ * h1 {
+ *     @include font-size(24px);
+ * }
+ */
+/**
+ * Style any number of headings in one fell swoop, e.g.:
+ *
+   .foo{
+       @include headings(1, 3){
+           color:#c0ffee;
+       }
+    }
+ *
+ * With thanks to @lar_zzz, @paranoida, @rowanmanning and ultimately
+ * @thierrylemoulec for refining and improving my initial mixin.
+ */
+/*------------------------------------*\
+    $FONTS
+\*------------------------------------*/
+/**
+ * As of now this is where we will be placing our icon fonts. 
+ * Freight Sans Pro will be served up from Typekit. 
+ */
+@font-face {
+  font-family: 'cruicons';
+  src: url("http://cruglobal.github.io/nav-prototypesfonts/cruicons.eot?13550619");
+  src: url("http://cruglobal.github.io/nav-prototypes/fonts/cruicons.eot?13550619#iefix") format("embedded-opentype"), url("http://cruglobal.github.io/nav-prototypes/fonts/cruicons.woff?13550619") format("woff"), url("http://cruglobal.github.io/nav-prototypes/fonts/cruicons.ttf?13550619") format("truetype"), url("http://cruglobal.github.io/nav-prototypes/fonts/cruicons.svg?13550619#cruicons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'cruicons';
+    src: url('../font/cruicons.svg?54093663#cruicons') format('svg');
+  }
+}
+*/
+/* line 30, ../scss/elements/_fonts.scss */
+[class^="icon-"], .has-submenu:hover:before, [class*=" icon-"], .has-submenu:hover:before {
+  font-family: "cruicons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+/* line 61, ../scss/elements/_fonts.scss */
+.icon-info-circled:before {
+  content: '\e808'; }
+
+/* '' */
+/* line 62, ../scss/elements/_fonts.scss */
+.icon-right-circle:before {
+  content: '\e800'; }
+
+/* '' */
+/* line 63, ../scss/elements/_fonts.scss */
+.icon-left-arrow:before {
+  content: '\e80e'; }
+
+/* '' */
+/* line 64, ../scss/elements/_fonts.scss */
+.icon-right-arrow:before, .has-submenu:hover:before {
+  content: '\e80d'; }
+
+/* '' */
+/* line 65, ../scss/elements/_fonts.scss */
+.icon-up-arrow:before {
+  content: '\e80c'; }
+
+/* '' */
+/* line 66, ../scss/elements/_fonts.scss */
+.icon-twitter:before {
+  content: '\e801'; }
+
+/* '' */
+/* line 67, ../scss/elements/_fonts.scss */
+.icon-facebook:before {
+  content: '\e802'; }
+
+/* '' */
+/* line 68, ../scss/elements/_fonts.scss */
+.icon-down-arrow:before {
+  content: '\e80f'; }
+
+/* '' */
+/* line 69, ../scss/elements/_fonts.scss */
+.icon-location:before {
+  content: '\e806'; }
+
+/* '' */
+/* line 70, ../scss/elements/_fonts.scss */
+.icon-hamburger:before {
+  content: '\e805'; }
+
+/* '' */
+/* line 71, ../scss/elements/_fonts.scss */
+.icon-mail:before {
+  content: '\e807'; }
+
+/* '' */
+/* line 72, ../scss/elements/_fonts.scss */
+.icon-search:before {
+  content: '\e804'; }
+
+/* '' */
+/* line 73, ../scss/elements/_fonts.scss */
+.icon-tag:before {
+  content: '\e811'; }
+
+/* '' */
+/* line 74, ../scss/elements/_fonts.scss */
+.icon-comment-1:before {
+  content: '\e812'; }
+
+/* '' */
+/* line 75, ../scss/elements/_fonts.scss */
+.icon-gplus:before {
+  content: '\e803'; }
+
+/* '' */
+/* line 76, ../scss/elements/_fonts.scss */
+.icon-cancel-circled:before {
+  content: '\e809'; }
+
+/* '' */
+/*------------------------------------*\
+    $HEADINGS
+\*------------------------------------*/
+/**
+ * Headings 1-6
+ * 
+ */
+/* line 8, ../scss/core/_headings.scss */
+h1, .h1 {
+  font-size: 200;
+  font-size: 75.9541px;
+  font-size: 3.99758rem;
+  line-height: 1.14543; }
+  @media screen and (max-width: 34.375em) {
+    /* line 8, ../scss/core/_headings.scss */
+    h1, .h1 {
+      font-size: 60.9541px;
+      font-size: 3.20811rem;
+      line-height: 1.4273; } }
+
+/* line 19, ../scss/core/_headings.scss */
+h2, .h2, .page__title {
+  font-size: 53.71577px;
+  font-size: 2.82715rem;
+  line-height: 1.07976; }
+  @media screen and (max-width: 34.375em) {
+    /* line 19, ../scss/core/_headings.scss */
+    h2, .h2, .page__title {
+      font-size: 45.71577px;
+      font-size: 2.40609rem;
+      line-height: 1.26871; } }
+
+/* line 27, ../scss/core/_headings.scss */
+h3, .h3 {
+  font-size: 37.98852px;
+  font-size: 1.9994rem;
+  line-height: 1.52678; }
+  @media screen and (max-width: 34.375em) {
+    /* line 27, ../scss/core/_headings.scss */
+    h3, .h3 {
+      font-size: 32.98852px;
+      font-size: 1.73624rem;
+      line-height: 1.75819; } }
+
+/* line 36, ../scss/core/_headings.scss */
+h4, .h4 {
+  font-size: 26.866px;
+  font-size: 1.414rem;
+  line-height: 1.07943; }
+  @media screen and (max-width: 34.375em) {
+    /* line 36, ../scss/core/_headings.scss */
+    h4, .h4 {
+      font-size: 21.866px;
+      font-size: 1.15084rem;
+      line-height: 1.32626; } }
+
+/* line 45, ../scss/core/_headings.scss */
+h5, .h5 {
+  font-size: 19px;
+  font-size: 1rem;
+  line-height: 1.52632; }
+
+/* line 50, ../scss/core/_headings.scss */
+h6, .h6 {
+  font-size: 15.2px;
+  font-size: 0.8rem;
+  line-height: 1.90789; }
+
+/*------------------------------------*\
+    $HELPER
+\*------------------------------------*/
+/**
+ * A series of helper classes to use arbitrarily. Only use a helper class if an
+ * element/component doesn’t already have a class to which you could apply this
+ * styling, e.g. if you need to float `.main-nav` left then add `float:left;` to
+ * that ruleset as opposed to adding the `.float--left` class to the markup.
+ *
+ */
+/**
+ * Add/remove floats
+ */
+/* line 16, ../scss/generic/_helpers.scss */
+.float--right {
+  float: right; }
+
+/* line 17, ../scss/generic/_helpers.scss */
+.float--left {
+  float: left; }
+
+/* line 18, ../scss/generic/_helpers.scss */
+.float--none {
+  float: none; }
+
+/**
+ * Text alignment and sizing
+ */
+/* line 24, ../scss/generic/_helpers.scss */
+.text--left {
+  text-align: left; }
+
+/* line 25, ../scss/generic/_helpers.scss */
+.text--center, .center-block {
+  text-align: center; }
+
+/* line 26, ../scss/generic/_helpers.scss */
+.text--right {
+  text-align: right; }
+
+/* line 27, ../scss/generic/_helpers.scss */
+.small-text {
+  font-size: 80%; }
+
+/**
+ * Font weights
+ */
+/* line 33, ../scss/generic/_helpers.scss */
+.weight--light, h1, .h1 {
+  font-weight: 100; }
+
+/* line 34, ../scss/generic/_helpers.scss */
+.weight--semi-light, h2, .h2, .page__title, h3, .h3 {
+  font-weight: 300; }
+
+/* line 35, ../scss/generic/_helpers.scss */
+.weight--normal, h4, .h4, h5, .h5 {
+  font-weight: 400; }
+
+/* line 36, ../scss/generic/_helpers.scss */
+.weight--semibold, h6, .h6 {
+  font-weight: 500; }
+
+/* line 37, ../scss/generic/_helpers.scss */
+.weight--bold {
+  font-weight: 600; }
+
+/**
+ * View helpers
+ */
+/* line 42, ../scss/generic/_helpers.scss */
+.overflow--hide {
+  overflow: hidden; }
+
+/* line 43, ../scss/generic/_helpers.scss */
+.overflow--show {
+  overflow: visible; }
+
+/**
+ * Positioning
+ */
+/* line 49, ../scss/generic/_helpers.scss */
+.position--absolute {
+  position: absolute; }
+
+/* line 50, ../scss/generic/_helpers.scss */
+.position--relative {
+  position: relative; }
+
+/* line 51, ../scss/generic/_helpers.scss */
+.position--fixed {
+  position: fixed; }
+
+/* line 52, ../scss/generic/_helpers.scss */
+.position--t0 {
+  top: 0; }
+
+/* line 53, ../scss/generic/_helpers.scss */
+.position--b0 {
+  bottom: 0; }
+
+/* line 54, ../scss/generic/_helpers.scss */
+.position--l0 {
+  left: 0; }
+
+/* line 55, ../scss/generic/_helpers.scss */
+.position--r0 {
+  right: 0; }
+
+/**
+ * Display
+ */
+/* line 60, ../scss/generic/_helpers.scss */
+.display--block {
+  display: block; }
+
+/* line 61, ../scss/generic/_helpers.scss */
+.display--inline-block {
+  display: inline-block; }
+
+/* line 62, ../scss/generic/_helpers.scss */
+.display--inline {
+  display: inline; }
+
+/* line 63, ../scss/generic/_helpers.scss */
+.display--none {
+  display: none; }
+
+/**
+ * Sizes
+ */
+/* line 69, ../scss/generic/_helpers.scss */
+.full-height {
+  height: 100%; }
+
+/* line 70, ../scss/generic/_helpers.scss */
+.full-width, .center-block {
+  width: 100%; }
+
+/**
+ * Content Alignment
+ */
+/* line 75, ../scss/generic/_helpers.scss */
+.center-block, .centered,
+.center {
+  margin-left: auto;
+  margin-right: auto; }
+
+/**
+ * Borders
+ */
+/* line 84, ../scss/generic/_helpers.scss */
+.border-bottom-solid {
+  border-bottom: 1px solid #aaaaaa; }
+
+/**
+ * Pull items full width of `.island` parents.
+ */
+/* line 92, ../scss/generic/_helpers.scss */
+.full-bleed {
+  margin-right: -29px;
+  margin-left: -29px; }
+  /* line 96, ../scss/generic/_helpers.scss */
+  .islet .full-bleed {
+    margin-right: -14.5px;
+    margin-left: -14.5px; }
+
+/**
+ * Add a help cursor to any element that gives the user extra information on
+ * `:hover`.
+ */
+/* line 107, ../scss/generic/_helpers.scss */
+.informative {
+  cursor: help; }
+
+/**
+ * Mute an object by reducing its opacity.
+ */
+/* line 115, ../scss/generic/_helpers.scss */
+.muted {
+  opacity: 0.5;
+  filter: alpha(opacity=50); }
+
+/**
+ * Add a right-angled quote to links that imply movement, e.g.:
+ *
+   <a href=# class=go>Read more</a>
+ *
+ */
+/* line 127, ../scss/generic/_helpers.scss */
+.go:after, .go:after {
+  content: "\00A0" "\00BB"; }
+
+/**
+ * Apply capital case to an element (usually a `strong`).
+ */
+/* line 135, ../scss/generic/_helpers.scss */
+.caps {
+  text-transform: uppercase; }
+
+/**
+ * Hide content off-screen without resorting to `display:none;`, also provide
+ * breakpoint specific hidden elements.
+ */
+/* line 155, ../scss/generic/_helpers.scss */
+.accessibility,
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/* line 173, ../scss/generic/_helpers.scss */
+.basic-transition {
+  -webkit-transition: 250ms ease;
+  -moz-transition: 250ms ease;
+  -ms-transition: 250ms ease;
+  -o-transition: 250ms ease;
+  transition: 250ms ease; }
+
+/* line 175, ../scss/generic/_helpers.scss */
+.decoration--none {
+  text-decoration: none; }
+
+/* line 177, ../scss/generic/_helpers.scss */
+.box-shadow--thin {
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); }
+
+/* line 1, ../scss/_mega-menu.scss */
+.page--mega-menu .nav-item {
+  padding: 4px 10px; }
+/* line 5, ../scss/_mega-menu.scss */
+.page--mega-menu .nav-cat {
+  font-weight: bold;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  display: block; }
+/* line 13, ../scss/_mega-menu.scss */
+.page--mega-menu .has-submenu ul {
+  margin-left: 4px; }
+/* line 17, ../scss/_mega-menu.scss */
+.page--mega-menu .has-submenu:before, .page--mega-menu .has-submenu:hover:before {
+  display: none !important; }
+/* line 21, ../scss/_mega-menu.scss */
+.page--mega-menu .page__links-wrap {
+  display: none !important; }
+
+/**
+ * $LOCAL-VARIABLES
+ */
+/**
+ * $Z-INDEX-SCALE
+ */
+/**
+ * $LOCAL-SILENT-CLASSES
+ */
+/* line 41, ../scss/top-nav.scss */
+.level0__menu-link, .level0__menu-link .icon-right-arrow, .toolbar__link {
+  line-height: 45px;
+  height: 45px; }
+
+/**
+ * $GENERAL-WRAPS
+ */
+/* line 53, ../scss/top-nav.scss */
+.off-canvas-wrap {
+  -webkit-backface-visibility: hidden;
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+
+/* line 60, ../scss/top-nav.scss */
+.inner-wrap {
+  -webkit-backface-visibility: hidden;
+  position: relative;
+  width: 100%;
+  -webkit-transition: -webkit-transform 500ms ease;
+  -moz-transition: -moz-transform 500ms ease;
+  -ms-transition: -ms-transform 500ms ease;
+  -o-transition: -o-transform 500ms ease;
+  transition: transform 500ms ease; }
+
+/* line 71, ../scss/top-nav.scss */
+.site-main {
+  background-color: #f7f7f7; }
+
+/**
+ * $OFF-CANVAS
+ */
+@media screen and (min-width: 53.75em) {
+  /* line 82, ../scss/top-nav.scss */
+  .toggle-nav {
+    display: none; } }
+
+/* line 88, ../scss/top-nav.scss */
+.off-canvas {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  overflow-x: hidden;
+  overflow-y: auto;
+  bottom: 0;
+  z-index: 2;
+  transition: transform 500ms ease 0s;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar; }
+  /* line 99, ../scss/top-nav.scss */
+  .off-canvas.move-right {
+    min-height: 100%;
+    -webkit-overflow-scrolling: touch; }
+
+/* line 106, ../scss/top-nav.scss */
+.off-canvas--left {
+  top: 0;
+  left: 0;
+  width: 13.88889rem;
+  -ms-transform: translate(-100.5%, 0);
+  -webkit-transform: translate3d(-100.5%, 0, 0);
+  -moz-transform: translate3d(-100.5%, 0, 0);
+  -ms-transform: translate3d(-100.5%, 0, 0);
+  -o-transform: translate3d(-100.5%, 0, 0);
+  transform: translate3d(-100.5%, 0, 0); }
+
+/* line 118, ../scss/top-nav.scss */
+.move-right > .inner-wrap {
+  -ms-transform: translate(13.88889rem, 0);
+  -webkit-transform: translate3d(13.88889rem, 0, 0);
+  -moz-transform: translate3d(13.88889rem, 0, 0);
+  -ms-transform: translate3d(13.88889rem, 0, 0);
+  -o-transform: translate3d(13.88889rem, 0, 0);
+  transform: translate3d(13.88889rem, 0, 0); }
+
+/**
+ * $SITE-NAVIGATION
+ */
+/* line 131, ../scss/top-nav.scss */
+.site-logo a {
+  background: url("http://www.cru.org/images/cru-logo.svg") no-repeat center center; }
+
+/* line 134, ../scss/top-nav.scss */
+.title-bar {
+  border-bottom: 1px solid #e7e7e7; }
+
+/* line 138, ../scss/top-nav.scss */
+.site-header {
+  position: relative;
+  height: auto;
+  overflow: initial;
+  margin-bottom: 29px;
+  -moz-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.025);
+  -webkit-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.025);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.025); }
+
+/* line 146, ../scss/top-nav.scss */
+.nav-icon {
+  background-image: url(http://g-ecx.images-amazon.com/images/G/01/gno/sprites/global-sprite-32-v3._CB325667795_.png);
+  position: absolute;
+  top: 20px;
+  right: 14px;
+  line-height: 0;
+  padding: 0;
+  margin: 0;
+  background-position: -10px -200px;
+  width: 10px;
+  height: 7px; }
+
+/* line 159, ../scss/top-nav.scss */
+.site-search {
+  top: 18px; }
+  /* line 162, ../scss/top-nav.scss */
+  .site-search ul {
+    line-height: initial; }
+
+/* line 167, ../scss/top-nav.scss */
+.site-search-form {
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  float: right;
+  height: 37px; }
+
+/* line 173, ../scss/top-nav.scss */
+.site-search fieldset {
+  height: auto; }
+
+/* line 177, ../scss/top-nav.scss */
+.site-search__select {
+  width: 136px;
+  border-radius: none;
+  margin-right: -4px;
+  height: 34px;
+  border: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0; }
+
+/* line 188, ../scss/top-nav.scss */
+.site-search__label {
+  line-height: 31px;
+  color: rgba(0, 0, 0, 0.3);
+  padding: 0 8px 0 6px;
+  font-weight: normal;
+  float: left;
+  font-size: 85%;
+  margin-top: 4px; }
+
+/* line 198, ../scss/top-nav.scss */
+.site-search__button {
+  border: none;
+  height: 34px;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0; }
+
+/* line 205, ../scss/top-nav.scss */
+.site-search__input {
+  border: none;
+  height: 34px;
+  margin-right: -2px;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0; }
+
+/**
+ * $SITE-NAVIGATION
+ */
+/* line 217, ../scss/top-nav.scss */
+.site-nav {
+  background-color: #fff;
+  z-index: 500;
+  border-bottom: 1px solid #e7e7e7; }
+  @media screen and (max-width: 53.6875em) {
+    /* line 217, ../scss/top-nav.scss */
+    .site-nav {
+      display: none; } }
+  /* line 231, ../scss/top-nav.scss */
+  .site-nav li:first-child > .site-nav__link {
+    background-color: #ffd014;
+    color: #fff;
+    border-right-color: transparent; }
+    /* line 236, ../scss/top-nav.scss */
+    .site-nav li:first-child > .site-nav__link:hover {
+      background-color: #e0b300;
+      color: #fff;
+      text-decoration: none; }
+
+/* line 245, ../scss/top-nav.scss */
+.site-nav-wrap {
+  margin: 0 10px 0 4px; }
+
+/* line 250, ../scss/top-nav.scss */
+.level0 {
+  position: relative;
+  margin-right: -4px; }
+
+/* line 255, ../scss/top-nav.scss */
+.level0__menu-link {
+  position: relative;
+  font-size: 90%;
+  color: #484848;
+  padding: 0 30px 0 14px; }
+  /* line 263, ../scss/top-nav.scss */
+  .level0__menu-link:hover {
+    color: #484848; }
+    /* line 266, ../scss/top-nav.scss */
+    .level0__menu-link:hover, .level0__menu-link:hover .icon-right-arrow {
+      text-decoration: none; }
+  /* line 272, ../scss/top-nav.scss */
+  .level0__menu-link.active .icon-right-arrow {
+    color: #ffd014; }
+  /* line 277, ../scss/top-nav.scss */
+  .level0__menu-link .icon-right-arrow {
+    display: inline-block;
+    color: #aaa;
+    font-size: 10px;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 0; }
+
+/* line 293, ../scss/top-nav.scss */
+.is-active .level0__menu-link {
+  padding: 0 29px 0 13px;
+  border-left: 1px solid #e7e7e7;
+  border-right: 1px solid #e7e7e7; }
+  /* line 298, ../scss/top-nav.scss */
+  .is-active .level0__menu-link, .is-active .level0__menu-link:hover {
+    text-decoration: none; }
+  /* line 302, ../scss/top-nav.scss */
+  .is-active .level0__menu-link > .icon-right-arrow {
+    color: #fff; }
+
+/* line 309, ../scss/top-nav.scss */
+.nav-subnav {
+  position: relative;
+  margin: 0;
+  padding: 0 8px;
+  overflow: hidden;
+  border-bottom: 1px solid #e7e7e7;
+  white-space: nowrap;
+  height: 31px;
+  background: #fff;
+  z-index: 1; }
+
+/* line 322, ../scss/top-nav.scss */
+.subnav__link a {
+  height: 30px;
+  line-height: 31px;
+  color: #404040;
+  font-size: 70%;
+  padding: 0 11px;
+  overflow: hidden; }
+  /* line 330, ../scss/top-nav.scss */
+  .subnav__link a:hover {
+    color: #404040;
+    text-decoration: none;
+    border-bottom: 2px solid #404040;
+    border-bottom: 3px solid #ffd014; }
+
+/* line 338, ../scss/top-nav.scss */
+.subnav__link--primary a {
+  font-weight: bold; }
+
+/* line 343, ../scss/top-nav.scss */
+.subnav__link--primary + .subnav__link--primary:before {
+  content: "/";
+  display: inline-block;
+  position: relative;
+  top: -8px; }
+
+/**
+ * $MENU-DROPDOWNS
+ */
+/* line 357, ../scss/top-nav.scss */
+.is-active:hover .menu-dropdown {
+  display: block !important; }
+
+/* line 363, ../scss/top-nav.scss */
+.menu-dropdown, .menu-submenu {
+  display: none;
+  z-index: 4;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background-color: #fff;
+  margin: 0;
+  -ms-user-select: none;
+  zoom: 1;
+  -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.11);
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.11);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.11);
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  border-radius: 1px; }
+
+/* line 382, ../scss/top-nav.scss */
+.menu-dropdown__content {
+  float: left;
+  clear: none;
+  width: 220px;
+  padding: 14px 0 7px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: 0; }
+
+/* line 395, ../scss/top-nav.scss */
+.nav-item {
+  position: relative;
+  padding: 6px 20px 6px 10px;
+  text-decoration: none;
+  font-size: 80%;
+  color: #404040; }
+
+/* line 404, ../scss/top-nav.scss */
+.nav-cat {
+  border-left: 4px solid #fff; }
+  /* line 407, ../scss/top-nav.scss */
+  .nav-cat:hover {
+    color: #404040;
+    text-decoration: none;
+    border-left-color: #ffd014; }
+
+/**
+ * $NAV-FLYOUT
+ */
+/* line 419, ../scss/top-nav.scss */
+.menu-submenu {
+  top: 0;
+  left: 220px; }
+
+/* line 426, ../scss/top-nav.scss */
+.menu-submenu__content {
+  float: left;
+  clear: none;
+  min-width: 240px;
+  height: 374px;
+  padding: 14px 20px 7px 14px;
+  background-color: #fff;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc; }
+
+/* line 438, ../scss/top-nav.scss */
+.has-submenu:hover > .menu-submenu {
+  display: block; }
+
+/* line 443, ../scss/top-nav.scss */
+.nav-cats {
+  width: 150px; }
+
+/* line 448, ../scss/top-nav.scss */
+.nav-sub-cats-wrap {
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 435px;
+  height: 100%;
+  zoom: 1;
+  border-left: 1px solid #eee;
+  width: 485px;
+  z-index: 3; }
+
+/* line 460, ../scss/top-nav.scss */
+.sub-cats {
+  position: absolute;
+  top: 0; }
+
+/* line 467, ../scss/top-nav.scss */
+.level1 li {
+  padding-bottom: 7px; }
+
+/* line 471, ../scss/top-nav.scss */
+.nav-cat--sub {
+  font-size: 85%; }
+
+/* line 475, ../scss/top-nav.scss */
+.nav-divider-before {
+  border-top: 1px solid #eee;
+  padding-top: 9px; }
+
+/* line 482, ../scss/top-nav.scss */
+.nav-submenu__group {
+  width: 220px;
+  padding-top: 15px;
+  position: absolute;
+  overflow: visible; }
+
+/* line 489, ../scss/top-nav.scss */
+.nav-submenu__group.cat-2 {
+  left: 235px; }
+
+/* line 494, ../scss/top-nav.scss */
+.nav-browse-promo {
+  position: absolute;
+  bottom: -15px;
+  right: 0;
+  border: 0;
+  margin-right: 1px;
+  max-width: auto; }
+
+/** 
+ * $PRIMARY-CONTENT-WRAPS
+ */
+/* line 509, ../scss/top-nav.scss */
+.page-content-wrap {
+  position: relative;
+  width: auto;
+  margin-right: 0;
+  height: inherit; }
+
+/* line 516, ../scss/top-nav.scss */
+.page-content {
+  padding-top: 0; }
+
+/**
+ * $TOOLBAR
+ */
+/* line 528, ../scss/top-nav.scss */
+.toolbar {
+  border-top: 1px solid #eee;
+  border-left: none;
+  margin-left: 0;
+  margin-bottom: 15px;
+  padding-left: 15px; }
+
+/* line 539, ../scss/top-nav.scss */
+.toolbar__link {
+  font-size: 70%;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 500;
+  margin-right: 15px; }
+
+/**
+ * $PAGE-TITLE AND WRAP
+ */
+/* line 553, ../scss/top-nav.scss */
+.page-title-bar {
+  margin-bottom: 15px; }
+
+/* line 558, ../scss/top-nav.scss */
+.page__title {
+  margin-bottom: 12px; }
+
+/**
+ * $NAV-TABS
+ */
+/* line 570, ../scss/top-nav.scss */
+.nav-tabs {
+  border-top: 1px solid #eee; }
+  /* line 573, ../scss/top-nav.scss */
+  .nav-tabs .nav-tabs__list {
+    margin-top: -1px; }
+  /* line 577, ../scss/top-nav.scss */
+  .nav-tabs .nav-tabs__item {
+    margin-right: 15px; }
+  /* line 581, ../scss/top-nav.scss */
+  .nav-tabs .nav-tabs__link {
+    font-weight: 600;
+    font-style: normal;
+    display: inline-block;
+    font-size: 65%;
+    letter-spacing: .2em;
+    color: rgba(0, 0, 0, 0.3);
+    padding: 16px 0; }
+    /* line 590, ../scss/top-nav.scss */
+    .nav-tabs .nav-tabs__link:hover {
+      text-decoration: none; }
+  /* line 596, ../scss/top-nav.scss */
+  .nav-tabs .nav-tabs__item.is-active .nav-tabs__link {
+    border-top: 1px rgba(0, 0, 0, 0.6) solid; }
+  /* line 600, ../scss/top-nav.scss */
+  .nav-tabs .nav-tabs__item.is-active .nav-tabs__link, .nav-tabs .nav-tabs__link:hover {
+    color: #404040; }
+
+/**
+ * $GRAY-TITLE-BACKGROUND 
+ */
+/**
+.page-title-bar{
+    background-color: rgba(98, 96, 98, 0.15); 
+    border-radius: 1px;
+}
+    
+.nav-tabs, .page__title{
+    padding: 0px 10px;
+}
+*/
+/**
+ * $LAYOUTS
+ */
+/**
+.nav-tabs__link {
+    text-transform: uppercase;
+}
+*/
+/* line 631, ../scss/top-nav.scss */
+.post-article figure > img {
+  width: 100%; }
+
+/* line 635, ../scss/top-nav.scss */
+.layout--wide {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* line 641, ../scss/top-nav.scss */
+.layout-single-column {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto; }
+
+/**
+ * $NO-TILE
+ */
+/* line 651, ../scss/top-nav.scss */
+.page--image-small .site-main {
+  background-color: #fcfcfc; }
+
+/* line 657, ../scss/top-nav.scss */
+.page--tile-narrow .page-content {
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* line 665, ../scss/top-nav.scss */
+.page-content {
+  position: relative; }
+
+/* line 669, ../scss/top-nav.scss */
+.cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -29px;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  z-index: 3; }
+
+/* line 685, ../scss/top-nav.scss */
+.submenu-open {
+  height: 374px; }
+
+/* line 689, ../scss/top-nav.scss */
+.has-submenu:hover:before {
+  float: right;
+  padding-top: 10px;
+  font-size: 14px;
+  margin-right: 7px; }
+
+/* line 700, ../scss/top-nav.scss */
+.page__links {
+  position: relative;
+  top: 71px;
+  z-index: 1;
+  text-align: center;
+  float: none;
+  padding-left: 0; }
+
+/* line 701, ../scss/top-nav.scss */
+.page__links li {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  border-right: 1px solid #514c4e; }
+
+/* line 702, ../scss/top-nav.scss */
+.page__links li:last-child {
+  border-right: 0; }
+
+/* line 703, ../scss/top-nav.scss */
+.page__links li > a {
+  display: inline-block;
+  padding: 8px 26px;
+  background-color: #666062;
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  font-size: 17px;
+  text-transform: capitalize; }
+
+/* line 704, ../scss/top-nav.scss */
+.page__links li > a:hover {
+  background-color: #514c4e;
+  border-color: #393637;
+  text-decoration: none; }
+
+@media screen and (max-width: 31.3125em) {
+  /* line 705, ../scss/top-nav.scss */
+  .page__links li > a {
+    padding: 6px 16px; } }
+@media screen and (max-width: 36.25em) {
+  /* line 707, ../scss/top-nav.scss */
+  .page__links li > a {
+    font-size: 75%; } }
+/* line 709, ../scss/top-nav.scss */
+.page--article .page__links {
+  z-index: 1;
+  margin-bottom: 42px;
+  top: 42px; }
+
+/* line 711, ../scss/top-nav.scss */
+.slider0 {
+  -webkit-animation-name: sliderEnd;
+  -moz-animation-name: sliderEnd;
+  -ms-animation-name: sliderEnd;
+  animation-name: sliderEnd;
+  -webkit-animation-duration: .7s;
+  -moz-animation-duration: .7s;
+  -ms-animation-duration: .7s;
+  animation-duration: .7s;
+  -webkit-animation-delay: 0,0.1s;
+  -moz-animation-delay: 0,0.1s;
+  -ms-animation-delay: 0,0.1s;
+  animation-delay: 0,0.1s; }
+  @media screen and (min-width: 61.25em) {
+    /* line 711, ../scss/top-nav.scss */
+    .slider0 {
+      left: 100%;
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+      opacity: 0.3; } }
+
+/* line 732, ../scss/top-nav.scss */
+.page__links-wrap {
+  display: none !important; }
+
+/*# sourceMappingURL=top-nav.css.map */
