@@ -1,0 +1,106 @@
+//
+// Variables
+// ----------------------
+
+@gray: #333;
+@gray-light: #aaa;
+@gray-lighter: #eee;
+@space: 40px;
+@blue: #428bca;
+@blue-dark: darken(@blue, 5%);
+
+// Mixin for transition/transform
+.translate{
+          transform: translate 500MS ease;
+}
+.transition {
+    transition: transform 500ms ease;
+}
+.transition-transform {
+    transition: transform 500ms ease;
+}
+
+
+//
+// Modal
+// ----------------------
+
+.modal{
+  
+   
+  // This is modal bg
+  &:before{
+    content: ""; 
+    display: none;
+    background: rgba(0,0,0,.6);
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0; 
+    z-index: 10;
+  }
+  
+  &:target{
+     
+    // Active animate in modal
+    &:before{
+      display: block;
+    }  
+    .modal-dialog{
+    transform: translate3d(13.88889rem, 0, 0);
+      top: 30%;  
+    }
+     
+  }
+  
+}
+
+// Modal Dialog
+// ----------------------
+
+.modal-dialog{
+    background: #fefefe;
+  /* border: gray solid 1px; */
+  border-radius: 5px;
+  /* margin-left: auto; */
+  position: fixed;
+  right: 50%;
+  top: -200%;
+  z-index: 11;
+  width: 500px;
+  transform: translate3d(13.88889rem, 0, 0);
+  transition: transform 500ms ease;
+  padding: 20px;
+}
+
+.modal-body{
+  padding: 10%/2;
+}
+
+.modal-header,
+.modal-footer{
+  padding: 10%/4 10%/2;
+}
+
+.modal-header{
+  border-bottom: gray solid 1px;
+  
+  h2{
+    font-size: 20px;
+  }
+  
+}
+
+.modal-footer{
+  border-top: gray solid 1px;
+  text-align: right;
+}
+
+/*ADDED TO STOP SCROLLING TO TOP*/
+#close {
+  display: none; 
+    .page-content {
+  top: 80px;
+}
+}
+
+
+

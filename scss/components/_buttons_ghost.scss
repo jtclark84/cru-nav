@@ -1,0 +1,22 @@
+ .button--secondary{
+background-color: transparent !important;
+ border-color: #595455 !important;
+  color: #595455 !important;
+     width: 70%;
+     margin-left: 15% !important;
+     
+     &:hover{
+         background-color: #595455 !important;
+
+           color: #fff !important;
+     }
+ }
+
+ .button--primary{
+    width: 70%;
+     margin-left: 15% !important;
+     
+ }
+
+
+

@@ -1,7 +1,7 @@
 <div class="off-canvas-wrap">
     <div class="inner-wrap">            
         <!-- TITLE BAR -->
-        <header class="site-header">
+        <header class="site-header  header  header-fixed-top">
             <div class="navbar" role="navigation">
                 <div class="title-bar">
                     <!-- TITLE GROUP -->
@@ -18,21 +18,24 @@
              
                     <!-- SITE SEARCH -->                        
                     <div class="site-search">
-                        <label for="site-search" class="site-search__label">Search</label>
+                        
+                        
+                        
                         <form class="m0 site-search-form">
                             <fieldset class="m0">
                                 <ul class="nav  bare-list">
-                                    <li>
+                                   <li>
+                                        <input id="site-search" type="search" class="site-search__input  form-control" placeholder="Search"></input>
+                                    </li>
+                            <li>
                                         <select type="select" class="form-control site-search__select">
-                                            <option value="Entire Site">Entire Site</option>
+                                            <option value="Entire Site">www.cru.org</option>
                                             <option value="Give">Give to Staff and Ministries</option>
                                         </select>
                                     </li>
+                                    
                                     <li>
-                                        <input id="site-search" type="search" class="site-search__input  form-control"></input>
-                                    </li>
-                                    <li>
-                                         <input type="submit" value="Go"  class="site-search__button  button button--subtle  button--small"></input>
+                                         <input type="submit" value=" "  class="site-search__button   button--small"></input>
                                     </li>
                                 </ul>
                             </fieldset>
@@ -40,5 +43,7 @@
                     </div>
                     <!-- END SITE SEARCH -->
                 </div>
+
+
                 
                 {% include flyout-navigation.html %}

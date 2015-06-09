@@ -1,0 +1,1758 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/restangular/1.3.1/restangular.min.js"></script>
+<script src="//platform.twitter.com/widgets.js" id="twitter-wjs" ></script>
+
+
+
+    <script type="text/javascript" defer src="/js/js_supernav/scripts.js"></script>
+
+
+
+
+
+
+
+<!-- Load Stylesheets and fonts -->
+<script type="text/javascript">
+	(function() {
+    var config = {
+    kitId: 'usb5wjy',
+    scriptTimeout: 3000
+    };
+    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";
+    var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");
+    h.className+=" wf-inactive"},config.scriptTimeout);
+    var tk=document.createElement("script"),d=false;
+    tk.src='//use.typekit.net/'+config.kitId+'.js';
+    tk.type="text/javascript";tk.async="true";
+    tk.onload=tk.onreadystatechange=function(){
+        var a=this.readyState;
+        if(d||a&&a!="complete"&&a!="loaded")return;
+        d=true;clearTimeout(t);
+        try{Typekit.load(config)}catch(b){}};
+        var s=document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(tk,s)
+    })();
+</script>     
+
+<link rel="stylesheet" type="text/css" href="/css/screen.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/top-nav.css"/>
+
+
+</head>
+
+    <body class="page">
+        <div class="preload">
+        	<img src="/images/cru-logo.svg" alt="" width="0" height="0">
+        	<img src="/images/cru-logo.png" alt="" width="0" height="0">
+        </div>
+        <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="http://static.ak.facebook.com/connect/xd_arbiter/QjK2hWv6uak.js?version=41#channel=f2d32dc64&amp;origin=http%3A%2F%2Fwww.cru.org" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="https://s-static.ak.facebook.com/connect/xd_arbiter/QjK2hWv6uak.js?version=41#channel=f2d32dc64&amp;origin=http%3A%2F%2Fwww.cru.org" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+        <script>(function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=116517098374395&version=v2.0";
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+
+        <div class="off-canvas-wrap">
+            <div class="inner-wrap">
+
+    <div class="off-canvas-wrap">
+    <div class="inner-wrap">            
+        <!-- TITLE BAR -->
+        <header class="site-header  header  header-fixed-top">
+            <div class="navbar" role="navigation">
+                <div class="title-bar">
+                    <!-- TITLE GROUP -->
+                    <hgroup class="title-group  site-logo  js-nav-toggle">
+                        <a href="/flyout/index.html" title="Return to Homepage">
+                            <h1>
+                                <span class="accessibility">
+                                    Cru is a caring community passionate about connecting people to Jesus Christ
+                                </span>
+                            </h1>
+                        </a>
+                    </hgroup>
+                     <!-- END TITLE GROUP -->
+             
+                    <!-- SITE SEARCH -->                        
+                    <div class="site-search">
+                        
+                        
+                        
+                        <form class="m0 site-search-form">
+                            <fieldset class="m0">
+                                <ul class="nav  bare-list">
+                                   <li>
+                                        <input id="site-search" type="search" class="site-search__input  form-control" placeholder="Search"></input>
+                                    </li>
+                            <li>
+                                        <select type="select" class="form-control site-search__select">
+                                            <option value="Entire Site">www.cru.org</option>
+                                            <option value="Give">Give to Staff and Ministries</option>
+                                        </select>
+                                    </li>
+                                    
+                                    <li>
+                                         <input type="submit" value=" "  class="site-search__button   button--small"></input>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <!-- END SITE SEARCH -->
+                </div>
+
+
+                
+                <!-- SITE NAV -->
+
+    	
+
+
+<nav class="site-nav-wrap">
+    
+     <ul class="nav  global-nav  u-pullRight">
+
+                
+                <li class="userAction__link  userAction--signup">
+                    <a href="#">Log In</a>
+                </li>
+                <li class="userAction__link  userAction--cart">
+                    <a href="#">Cart</a>
+                </li>
+         
+         
+              
+         
+         <nav id="menu" class=" global__button userAction--global">
+    		
+    		<input type="checkbox" id="toggle-nav"/><a id="menu" href="#">Global</a>
+    		<label id="toggle-nav-label" for="toggle-nav"><i class="icon-reorder"></i></label>
+    		
+    		<div class="box">
+	    		<ul class="block-list">
+	    			<li><a href="#"><i class="icon-home"></i> North America</a></li>
+	    			<li><a href="#"><i class="icon-file-alt"></i> South America</a></li>
+	    			<li><a href="#"><i class="icon-copy"></i> Western Eaurope</a></li>
+	    			<li><a href="#"><i class="icon-envelope"></i> Africa</a></li>
+	    		</ul>
+    		</div>
+    		
+    	</nav>
+         
+         
+                </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="wrap">
+  
+</div>
+    
+    
+  <!-- crumenu [Configuration:main] [Theme Loc:primary] [Integration:auto] --> <a class="crumenu-responsive-toggle crumenu-responsive-toggle-main crumenu-skin-clean-white crumenu-loc-primary" data-crumenu-target="crumenu-main-2-primary"><i class="fa fa-bars"></i>Menu</a>
+            
+          
+
+            <nav id="crumenu-main-2-primary" class="crumenu crumenu-nojs crumenu-main crumenu-loc-primary crumenu-responsive crumenu-responsive-default crumenu-responsive-collapse crumenu-horizontal crumenu-transition-none crumenu-trigger-hover_intent crumenu-skin-clean-white crumenu-has-border crumenu-bar-align-full crumenu-items-align-left crumenu-bound-inner crumenu-disable-submenu-scroll crumenu-hide-bkgs crumenu-sub-indicators crumenu-retractors-responsive">
+                
+                <ul id="crumenu-nav-main-2-primary" class="crumenu-nav">
+                    
+                   
+       
+                    <!-- Super-Menu *How to Know God* -->
+
+                    <li  class="crumenu-item  crumenu-current-menu-item  crumenu-item-has-children  crumenu-item-level-0 crumenu-column crumenu-column-auto crumenu-has-submenu-drop crumenu-has-submenu-mega ">
+                        <a class="crumenu-target crumenu-target-with-icon  crumenu-item-layout-icon_left" href="index.html" tabindex="0"><span class="crumenu-target-title crumenu-target-text">How to Know God</span></a>
+                        <ul class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-mega crumenu-submenu-drop crumenu-submenu-align-full_width crumenu-submenu-bkg-img">
+                            <!-- Begin Tabs -->
+                            <li class="crumenu-tabs  crumenu-item-level-1 crumenu-column  crumenu-column-full  crumenu-tab-layout-left  crumenu-tabs-show-default">
+                                <ul class="crumenu-tabs-group  crumenu-column crumenu-column-1-5  crumenu-submenu  crumenu-submenu-type-auto  crumenu-submenu-type-tabs-group">
+                                               
+               <li class="crumenu-tab crumenu-item  crumenu-item-has-children   crumenu-item-auto  crumenu-column  crumenu-column-full  crumenu-has-submenu-drop"
+                data-crumenu-trigger="mouseover"><a class="crumenu-target crumenu-target-with-icon  crumenu-item-layout-default crumenu-item-layout-icon_left" href="#"><span class="crumenu-target-title  crumenu-target-text">How to Know God</span></a>
+                    <ul
+                    class="crumenu-tab-content-panel  crumenu-column  crumenu-column-4-5  crumenu-submenu  crumenu-submenu-type-auto  crumenu-submenu-type-tab-content-panel  crumenu-autoclear">
+                        
+                         <li  class="crumenu-item  crumenu-item-has-children   crumenu-item-auto crumenu-item-header  crumenu-column  crumenu-column-1-3 crumenu-has-submenu-stack"><a class="crumenu-target  crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">View All</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                                <li  class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto  crumenu-item-normal  crumenu-column  crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">How to Know God Personally</span></a>
+                                </li><li  class="crumenu-item   crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">My Story: A Life Changed</span></a>
+                                </li>
+                                <li  class="crumenu-item   crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Jesus and the Intellectual</span></a>
+                                </li>
+                                   <li  class="crumenu-item   crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Jesus: God or Just a Good Man?</span></a>
+                                </li>  <li  class="crumenu-item   crumenu-item-object-mega-menu crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Why the Ressurection Matters to You</span></a>
+                                </li>
+                                 
+                            
+                                </ul>
+                             
+                        </li>
+                        
+                        <li class="crumenu-item  crumenu-item-has-children     crumenu-column crumenu-column-3-7  crumenu-item-header  crumenu-column  crumenu-has-submenu-stack">
+                            <a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text crumenu-featured">FEATURED:&nbsp;&nbsp;</span><span class="crumenu-target-title crumenu-target-text">Would You Like to Know God Personally?</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                       
+                       <li class="crumenu-item  crumenu-item-type-custom  crumenu-item-object-custom  crumenu-item-auto  crumenu-item-header  crumenu-column"><span class="crumenu-target crumenu-target-with-image crumenu-item-layout-default crumenu-item-layout-image_left crumenu-item-notext"><img class="crumenu-image " src="/images/howtoknow.jpg"  /></span>
+                        </li>
+                    </ul>
+                </li>
+ 
+               
+                                    
+                                    
+                        <li class="crumenu-retractor crumenu-retractor-mobile"><i class="fa fa-times"></i> Close</li>
+                        </ul>
+                </li>
+                <!-- end **MyStory -->
+
+
+      
+                                  
+
+                </ul>
+                </li>
+                </ul>
+                </li>
+
+                 <!-- end Super-Menu -->
+                    
+      
+                    
+                    <!-- Super-Menu *training* -->
+
+                    <li  class="crumenu-item  crumenu-current-menu-item  crumenu-item-has-children  crumenu-item-level-0 crumenu-column crumenu-column-auto crumenu-has-submenu-drop crumenu-has-submenu-mega  ">
+                        <a class="crumenu-target crumenu-target-with-icon  crumenu-item-layout-icon_left" href="index.html" tabindex="0"><span class="crumenu-target-title crumenu-target-text">Train & Grow</span></a>
+                        <ul class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-mega crumenu-submenu-drop crumenu-submenu-align-full_width crumenu-submenu-bkg-img">
+                            <!-- Begin Tabs -->
+                            <li class="crumenu-tabs  crumenu-item-level-1 crumenu-column  crumenu-column-full  crumenu-tab-layout-left  crumenu-tabs-show-default">
+                                <ul class="crumenu-tabs-group  crumenu-column crumenu-column-1-5  crumenu-submenu  crumenu-submenu-type-auto  crumenu-submenu-type-tabs-group">
+                                               
+               <li class="crumenu-tab crumenu-item  crumenu-item-has-children   crumenu-item-auto  crumenu-column  crumenu-column-full  crumenu-has-submenu-drop"
+                data-crumenu-trigger="mouseover">
+                   <a class="crumenu-target  crumenu-target-with-icon  crumenu-item-layout-default  crumenu-item-layout-icon_left" href="#"><span class="crumenu-target-title crumenu-target-text">Train & Grow</span></a>
+                    <ul
+                    class="crumenu-tab-content-panel crumenu-column crumenu-column-4-5 crumenu-submenu   crumenu-submenu-type-tab-content-panel  crumenu-autoclear">
+                         <li class="crumenu-item  crumenu-item-has-children   crumenu-item-auto  crumenu-item-header  crumenu-column  crumenu-column-1-3 crumenu-has-submenu-stack"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">View All</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                                <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Classics</span></a>
+                                </li><li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Bible Studies</span></a>
+                                </li>
+                                <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Training</span></a>
+                                </li>
+                                 <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Evangelism</span></a>
+                                </li>
+                                 <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Mentoring</span></a>
+                                </li>
+                                <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Prayer, Quiet Time, and Devotionals</span></a>
+                                </li>
+                                 
+                            
+                                </ul>
+                             
+                        </li>
+                        
+                       
+                       
+                       <li class="crumenu-item  crumenu-item-has-children     crumenu-column crumenu-column-3-7  crumenu-item-header  crumenu-column  crumenu-has-submenu-stack">
+                            <a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text crumenu-featured">FEATURED:&nbsp;&nbsp;</span><span class="crumenu-target-title crumenu-target-text">10 Basic Steps to Christian Maturity</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                       
+                       <li class="crumenu-item  crumenu-item-type-custom  crumenu-item-object-custom  crumenu-item-auto  crumenu-item-header  crumenu-column"><span class="crumenu-target crumenu-target-with-image crumenu-item-layout-default crumenu-item-layout-image_left crumenu-item-notext"><img class="crumenu-image " src="/images/background.jpg"  /></span>
+                        </li>
+                    </ul>
+                </li>
+
+               
+                                    
+                                    
+                        <li class="crumenu-retractor crumenu-retractor-mobile"><i class="fa fa-times"></i> Close</li>
+                        </ul>
+                </li>
+                <!-- end **MyStory -->
+
+
+        <!-- **MyStory -->
+
+                <li id="menu-item-182" class="crumenu-tab crumenu-item      crumenu-item-has-children   crumenu-item-auto crumenu-column crumenu-column-full crumenu-has-submenu-drop"
+                data-crumenu-trigger="mouseover"><a class="crumenu-target crumenu-target-with-icon crumenu-item-layout-default crumenu-item-layout-icon_left" href="#"><span class="crumenu-target-title crumenu-target-text">Classics</span></a>
+                    <ul
+                    class="crumenu-tab-content-panel crumenu-column crumenu-column-4-5 crumenu-submenu   crumenu-submenu-type-tab-content-panel  crumenu-autoclear">
+                         <li class="crumenu-item  crumenu-item-has-children   crumenu-item-auto  crumenu-item-header  crumenu-column  crumenu-column-1-3 crumenu-has-submenu-stack"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">View All</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                                <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">How to Know God Personally</span></a>
+                                </li><li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Have You Made the Wonderful Discovery of the Spirit-fileed Life?</span></a>
+                                </li>
+                                <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Transferable Concepts</span></a>
+                                </li>
+                                 <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">10 Basic Steps to Christian Maturity</span></a>
+                                </li>
+                               
+                          
+                                </ul>
+                        </li>
+                        
+                       
+                       <li class="crumenu-item  crumenu-item-has-children     crumenu-column crumenu-column-3-7  crumenu-item-header  crumenu-column  crumenu-has-submenu-stack">
+                            <a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text crumenu-featured">FEATURED:&nbsp;&nbsp;</span><span class="crumenu-target-title crumenu-target-text">10 Basic Steps to Christian Maturity</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                       
+                       <li class="crumenu-item  crumenu-item-type-custom  crumenu-item-object-custom  crumenu-item-auto  crumenu-item-header  crumenu-column"><span class="crumenu-target crumenu-target-with-image crumenu-item-layout-default crumenu-item-layout-image_left crumenu-item-notext"><img class="crumenu-image " src="/images/background.jpg"  /></span>
+                        </li>
+                    </ul>
+                </li>
+
+
+               
+                                    
+                                    
+                        <li class="crumenu-retractor crumenu-retractor-mobile"><i class="fa fa-times"></i> Close</li>
+                        </ul>
+                </li>
+                <!-- end **MyStory -->
+
+       <!-- **MyStory -->
+
+                <li id="menu-item-182" class="crumenu-tab crumenu-item      crumenu-item-has-children   crumenu-item-auto crumenu-column crumenu-column-full crumenu-has-submenu-drop"
+                data-crumenu-trigger="mouseover"><a class="crumenu-target crumenu-target-with-icon crumenu-item-layout-default crumenu-item-layout-icon_left" href="#"><span class="crumenu-target-title crumenu-target-text">Prayer, Quiet Times, and Devotionals</span></a>
+                   <ul
+                    class="crumenu-tab-content-panel crumenu-column crumenu-column-4-5 crumenu-submenu   crumenu-submenu-type-tab-content-panel  crumenu-autoclear">
+                         <li class="crumenu-item  crumenu-item-has-children   crumenu-item-auto  crumenu-item-header  crumenu-column  crumenu-column-1-3 crumenu-has-submenu-stack"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">View All</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                                <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Discover God's Character E-Devotionals</span></a>
+                                </li><li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Personal Guide to Fasting</span></a>
+                                </li>
+                                <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">7 Steps to Fasting</span></a>
+                                </li>
+                                 <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Advent</span></a>
+                                </li>
+                                 <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Lent</span></a>
+                                </li>
+                                <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Today's Promise</span></a>
+                                </li>
+                                 
+                            
+                                </ul>
+                             
+                        </li>
+                        
+
+                       
+                       <li class="crumenu-item  crumenu-item-has-children     crumenu-column crumenu-column-3-7  crumenu-item-header  crumenu-column  crumenu-has-submenu-stack">
+                            <a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text crumenu-featured">FEATURED:&nbsp;&nbsp;</span><span class="crumenu-target-title crumenu-target-text">10 Basic Steps to Christian Maturity</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                       
+                       <li class="crumenu-item  crumenu-item-type-custom  crumenu-item-object-custom  crumenu-item-auto  crumenu-item-header  crumenu-column"><span class="crumenu-target crumenu-target-with-image crumenu-item-layout-default crumenu-item-layout-image_left crumenu-item-notext"><img class="crumenu-image " src="/images/background.jpg"  /></span>
+                        </li>
+                    </ul>
+                </li>
+
+               
+                                    
+                                    
+                        <li class="crumenu-retractor crumenu-retractor-mobile"><i class="fa fa-times"></i> Close</li>
+                        </ul>
+                </li>
+                <!-- end **MyStory -->
+
+
+                </ul>
+                </li>
+                </ul>
+                </li>
+
+                 <!-- end Super-Menu -->
+
+          
+                    
+                <!-- Super-Menu *communities* -->
+
+                    <li id="menu-item-7" class="crumenu-item   crumenu-item-object-page crumenu-current-menu-item crumenu-page_item crumenu-page-item-5 crumenu-current_page_item crumenu-item-has-children   crumenu-item-level-0 crumenu-column crumenu-column-auto crumenu-has-submenu-drop crumenu-has-submenu-mega   "><a class="crumenu-target crumenu-target-with-icon crumenu-item-layout-default crumenu-item-layout-icon_left" href="index.html" tabindex="0"><span class="crumenu-target-title crumenu-target-text">Communities</span></a>
+                        <ul class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-mega crumenu-submenu-drop crumenu-submenu-align-full_width crumenu-submenu-bkg-img">
+                            <!-- Begin Tabs -->
+                            <li class="crumenu-tabs  crumenu-item-level-1 crumenu-column  crumenu-column-full  crumenu-tab-layout-left  crumenu-tabs-show-default">
+                                <ul class="crumenu-tabs-group  crumenu-column crumenu-column-1-5  crumenu-submenu  crumenu-submenu-type-auto  crumenu-submenu-type-tabs-group">
+                                               
+               <li class="crumenu-tab crumenu-item  crumenu-item-has-children   crumenu-item-auto  crumenu-column  crumenu-column-full  crumenu-has-submenu-drop"
+                data-crumenu-trigger="mouseover"><a class="crumenu-target crumenu-target-with-icon crumenu-item-layout-default crumenu-item-layout-icon_left" href="#"><span class="crumenu-target-title crumenu-target-text">Communities</span></a>
+                    <ul
+                    class="crumenu-tab-content-panel crumenu-column crumenu-column-4-5 crumenu-submenu   crumenu-submenu-type-tab-content-panel  crumenu-autoclear">
+                         <li class="crumenu-item  crumenu-item-has-children   crumenu-item-auto  crumenu-item-header  crumenu-column  crumenu-column-1-3 crumenu-has-submenu-stack"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">View All</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                                <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Campus</span></a>
+                                </li><li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">City</span></a>
+                                </li>
+                                <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Inner City</span></a>
+                                </li>
+                                 <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Athletes</span></a>
+                                </li>
+                                 <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Families</span></a>
+                                </li> <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">High School</span></a>
+                                </li>
+                                
+                          
+                                </ul>
+                        </li>
+             
+                       
+                       <li class="crumenu-item  crumenu-item-has-children     crumenu-column crumenu-column-3-7  crumenu-item-header  crumenu-column  crumenu-has-submenu-stack">
+                            <a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text crumenu-featured">FEATURED:&nbsp;&nbsp;</span><span class="crumenu-target-title crumenu-target-text">Portland Inner City</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                       
+                       <li class="crumenu-item  crumenu-item-type-custom  crumenu-item-object-custom  crumenu-item-auto  crumenu-item-header  crumenu-column"><span class="crumenu-target crumenu-target-with-image crumenu-item-layout-default crumenu-item-layout-image_left crumenu-item-notext"><img class="crumenu-image " src="/images/portland.jpg"  /></span>
+                        </li>
+                    </ul>
+                </li>
+
+                        
+                        
+
+               
+                                    
+                                    
+                        <li class="crumenu-retractor crumenu-retractor-mobile"><i class="fa fa-times"></i> Close</li>
+                        </ul>
+                </li>
+                <!-- end **MyStory -->
+
+
+        <!-- **MyStory -->
+
+                <li class="crumenu-tab crumenu-item  crumenu-item-has-children  crumenu-item-auto crumenu-column  crumenu-column-full  crumenu-has-submenu-drop"
+                data-crumenu-trigger="mouseover"><a class="crumenu-target crumenu-target-with-icon  crumenu-item-layout-default  crumenu-item-layout-icon_left" href="#"><span class="crumenu-target-title crumenu-target-text">Locate Cru Near You</span></a>
+                    <ul
+                    class="crumenu-tab-content-panel crumenu-column crumenu-column-4-5 crumenu-submenu   crumenu-submenu-type-tab-content-panel  crumenu-autoclear">
+                         <li class="crumenu-item  crumenu-item-has-children   crumenu-item-auto  crumenu-item-header  crumenu-column  crumenu-column-1-3 crumenu-has-submenu-stack"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">View All</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                                <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Africa</span></a>
+                                </li><li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Americas</span></a>
+                                </li>
+                                <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Asia</span></a>
+                                </li>
+                                 <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Australia-Oceania</span></a>
+                                </li>
+                                 <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Europe</span></a>
+                                </li>
+                                
+                          
+                                </ul>
+                        </li>
+                             
+                       
+                       <li class="crumenu-item  crumenu-item-has-children     crumenu-column crumenu-column-3-7  crumenu-item-header  crumenu-column  crumenu-has-submenu-stack">
+                            <a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text crumenu-featured">FEATURED:&nbsp;&nbsp;</span><span class="crumenu-target-title crumenu-target-text">Portland Inner City</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                       
+                       <li class="crumenu-item  crumenu-item-type-custom  crumenu-item-object-custom  crumenu-item-auto  crumenu-item-header  crumenu-column"><span class="crumenu-target crumenu-target-with-image crumenu-item-layout-default crumenu-item-layout-image_left crumenu-item-notext"><img class="crumenu-image " src="/images/portland.jpg"  /></span>
+                        </li>
+                    </ul>
+                </li>
+
+               
+                                    
+                                    
+                        <li class="crumenu-retractor crumenu-retractor-mobile"><i class="fa fa-times"></i> Close</li>
+                        </ul>
+                </li>
+                <!-- end **MyStory -->
+
+       <!-- **MyStory -->
+
+                <li class="crumenu-tab crumenu-item  crumenu-item-has-children   crumenu-item-auto crumenu-column crumenu-column-full crumenu-has-submenu-drop"
+                data-crumenu-trigger="mouseover"><a class="crumenu-target crumenu-target-with-icon crumenu-item-layout-default crumenu-item-layout-icon_left" href="#"><span class="crumenu-target-title crumenu-target-text">More</span></a>
+                   <ul
+                    class="crumenu-tab-content-panel crumenu-column crumenu-column-4-5 crumenu-submenu   crumenu-submenu-type-tab-content-panel  crumenu-autoclear">
+                         <li class="crumenu-item  crumenu-item-has-children   crumenu-item-auto  crumenu-item-header  crumenu-column  crumenu-column-1-3 crumenu-has-submenu-stack"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">View All</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                                <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Athletes in Action</span></a>
+                                </li><li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Campus</span></a>
+                                </li>
+                                <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">City</span></a>
+                                </li>
+                                 <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Christian Embassy, D.C.</span></a>
+                                </li>
+                                 <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Christian Embassy, New York</span></a>
+                                </li>
+                                <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Faculty and Graduates</span></a>
+                                </li>
+                                 <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">FamilyLife.</span></a>
+                                </li>
+                                 <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Global Aid Network</span></a>
+                                </li>
+                                <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Inner City</span></a>
+                                </li>
+                                 <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">High School</span></a>
+                                </li>
+                                 <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Military</span></a>
+                                </li>
+                               <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">The Impact Movement</span></a>
+                                </li>
+                                 <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">The JESUS Film Project</span></a>
+                                </li>
+                                 <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Josh McDowell Ministry</span></a>
+                                </li>
+                                 <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">All</span></a>
+                                </li>
+                            
+                                </ul>
+                             
+                        </li>
+                        
+                            
+                       
+                       <li class="crumenu-item  crumenu-item-has-children     crumenu-column crumenu-column-3-7  crumenu-item-header  crumenu-column  crumenu-has-submenu-stack">
+                            <a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text crumenu-featured">FEATURED:&nbsp;&nbsp;</span><span class="crumenu-target-title crumenu-target-text">Portland Inner City</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                       
+                       <li class="crumenu-item  crumenu-item-type-custom  crumenu-item-object-custom  crumenu-item-auto  crumenu-item-header  crumenu-column"><span class="crumenu-target crumenu-target-with-image crumenu-item-layout-default crumenu-item-layout-image_left crumenu-item-notext"><img class="crumenu-image " src="/images/portland.jpg"  /></span>
+                        </li>
+                    </ul>
+                </li>
+
+               
+                                    
+                                    
+                        <li class="crumenu-retractor crumenu-retractor-mobile"><i class="fa fa-times"></i> Close</li>
+                        </ul>
+                </li>
+                <!-- end **MyStory -->
+
+
+                </ul>
+                </li>
+                </ul>
+                </li>
+
+                 <!-- end Super-Menu -->
+
+                    
+                    
+                    
+               <!-- Super-Menu *oppurtunities* -->
+
+                    <li class="crumenu-item   crumenu-item-object-page crumenu-current-menu-item crumenu-page_item crumenu-page-item-5 crumenu-current_page_item crumenu-item-has-children   crumenu-item-level-0 crumenu-column crumenu-column-auto crumenu-has-submenu-drop crumenu-has-submenu-mega   "><a class="crumenu-target crumenu-target-with-icon crumenu-item-layout-default crumenu-item-layout-icon_left" href="/flyout/opportunities/index.html" tabindex="0"><span class="crumenu-target-title crumenu-target-text">Oppurtunities</span></a>
+                        <ul class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-mega crumenu-submenu-drop crumenu-submenu-align-full_width crumenu-submenu-bkg-img">
+                            <!-- Begin Tabs -->
+                            <li class="crumenu-tabs  crumenu-item-level-1 crumenu-column  crumenu-column-full  crumenu-tab-layout-left  crumenu-tabs-show-default">
+                                <ul class="crumenu-tabs-group  crumenu-column crumenu-column-1-5  crumenu-submenu  crumenu-submenu-type-auto  crumenu-submenu-type-tabs-group">
+                                               
+               <li class="crumenu-tab crumenu-item  crumenu-item-has-children   crumenu-item-auto  crumenu-column  crumenu-column-full  crumenu-has-submenu-drop"
+                data-crumenu-trigger="mouseover"><a class="crumenu-target crumenu-target-with-icon crumenu-item-layout-default crumenu-item-layout-icon_left" href="/flyout/opportunities/mission-trips/index.html"><span class="crumenu-target-title crumenu-target-text">Missions Trips</span></a>
+                   <ul
+                    class="crumenu-tab-content-panel crumenu-column crumenu-column-4-5 crumenu-submenu   crumenu-submenu-type-tab-content-panel  crumenu-autoclear">
+                         <li class="crumenu-item  crumenu-item-has-children   crumenu-item-auto  crumenu-item-header  crumenu-column  crumenu-column-1-3 crumenu-has-submenu-stack"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">View All</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                                <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="/flyout/opportunities/mission-trips/summer-missions/index.html"><span class="crumenu-target-title crumenu-target-text">Summer Missions</span></a>
+                                </li>
+                                <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Jesus Film Trips</span></a>
+                                </li>
+                                
+                          
+                                </ul>
+                        </li>
+            
+                       <li class="crumenu-item  crumenu-item-has-children     crumenu-column crumenu-column-3-7  crumenu-item-header  crumenu-column  crumenu-has-submenu-stack">
+                            <a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text crumenu-featured">FEATURED:&nbsp;&nbsp;</span><span class="crumenu-target-title crumenu-target-text">Summer Missions with Cru</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                       
+                       <li class="crumenu-item  crumenu-item-type-custom  crumenu-item-object-custom  crumenu-item-auto  crumenu-item-header  crumenu-column"><span class="crumenu-target crumenu-target-with-image crumenu-item-layout-default crumenu-item-layout-image_left crumenu-item-notext"><img class="crumenu-image " src="/images/summer.jpg"  /></span>
+                        </li>
+                    </ul>
+                </li>
+
+                       
+                       
+                        <li class="crumenu-retractor crumenu-retractor-mobile"><i class="fa fa-times"></i> Close</li>
+                        </ul>
+                </li>
+                                    
+                            
+                <!-- end **MyStory -->
+
+
+        <!-- **MyStory -->
+
+                <li id="menu-item-182" class="crumenu-tab crumenu-item      crumenu-item-has-children   crumenu-item-auto crumenu-column crumenu-column-full crumenu-has-submenu-drop"
+                data-crumenu-trigger="mouseover"><a class="crumenu-target crumenu-target-with-icon crumenu-item-layout-default crumenu-item-layout-icon_left" href="#"><span class="crumenu-target-title crumenu-target-text">Internships</span></a>
+                     <ul
+                    class="crumenu-tab-content-panel crumenu-column crumenu-column-4-5 crumenu-submenu   crumenu-submenu-type-tab-content-panel  crumenu-autoclear">
+                         <li class="crumenu-item  crumenu-item-has-children   crumenu-item-auto  crumenu-item-header  crumenu-column  crumenu-column-1-3 crumenu-has-submenu-stack"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">View All</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                                <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Orlando Summer Project</span></a>
+                                </li>
+                                <li id="menu-item-216" class="crumenu-item   crumenu-item-object-mega-menu crumenu-item-216 crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Preview Weekend</span></a>
+                                </li>
+                                <li id="menu-item-215" class="crumenu-item   crumenu-item-object-mega-menu crumenu-item-215 crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">One-year Internship in Orlando</span></a>
+                                </li>
+                          
+                                </ul>
+                        </li>
+                        
+                       <li class="crumenu-item  crumenu-item-has-children     crumenu-column crumenu-column-3-7  crumenu-item-header  crumenu-column  crumenu-has-submenu-stack">
+                            <a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text crumenu-featured">FEATURED:&nbsp;&nbsp;</span><span class="crumenu-target-title crumenu-target-text">Summer Missions with Cru</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                       
+                       <li class="crumenu-item  crumenu-item-type-custom  crumenu-item-object-custom  crumenu-item-auto  crumenu-item-header  crumenu-column"><span class="crumenu-target crumenu-target-with-image crumenu-item-layout-default crumenu-item-layout-image_left crumenu-item-notext"><img class="crumenu-image " src="/images/summer.jpg"  /></span>
+                        </li>
+                    </ul>
+                </li>
+                        <li class="crumenu-retractor crumenu-retractor-mobile"><i class="fa fa-times"></i> Close</li>
+                        </ul>
+                </li>
+                <!-- end **MyStory -->
+                                    
+                                    
+                                    
+                                    
+                                     <!-- **MyStory -->
+
+                <li id="menu-item-182" class="crumenu-tab crumenu-item      crumenu-item-has-children   crumenu-item-auto crumenu-column crumenu-column-full crumenu-has-submenu-drop"
+                data-crumenu-trigger="mouseover"><a class="crumenu-target crumenu-target-with-icon crumenu-item-layout-default crumenu-item-layout-icon_left" href="#"><span class="crumenu-target-title crumenu-target-text">Volunteer</span></a>
+                   <ul
+                    class="crumenu-tab-content-panel crumenu-column crumenu-column-4-5 crumenu-submenu   crumenu-submenu-type-tab-content-panel  crumenu-autoclear">
+                         <li class="crumenu-item  crumenu-item-has-children   crumenu-item-auto  crumenu-item-header  crumenu-column  crumenu-column-1-3 crumenu-has-submenu-stack"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">View All</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                                <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Contact Us</span></a>
+                                </li>
+                                <li id="menu-item-216" class="crumenu-item   crumenu-item-object-mega-menu crumenu-item-216 crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Orlando Openings</span></a>
+                                </li>
+                                <li id="menu-item-215" class="crumenu-item   crumenu-item-object-mega-menu crumenu-item-215 crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Volunteer Profiles</span></a>
+                                </li>
+                                  <li id="menu-item-217" class="crumenu-item   crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenucrumenu-target-title crumenu-target-text">Volunteer Sign Up</span></a>
+                                </li>
+                          
+                                </ul>
+                        </li>
+                        
+                       <li class="crumenu-item  crumenu-item-has-children     crumenu-column crumenu-column-3-7  crumenu-item-header  crumenu-column  crumenu-has-submenu-stack">
+                            <a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text crumenu-featured">FEATURED:&nbsp;&nbsp;</span><span class="crumenu-target-title crumenu-target-text">Summer Missions with Cru</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                       
+                       <li class="crumenu-item  crumenu-item-type-custom  crumenu-item-object-custom  crumenu-item-auto  crumenu-item-header  crumenu-column"><span class="crumenu-target crumenu-target-with-image crumenu-item-layout-default crumenu-item-layout-image_left crumenu-item-notext"><img class="crumenu-image " src="/images/summer.jpg"  /></span>
+                        </li>
+                    </ul>
+                </li>
+                        <li class="crumenu-retractor crumenu-retractor-mobile"><i class="fa fa-times"></i> Close</li>
+                        </ul>
+                </li>
+                <!-- end **MyStory -->
+                                    
+                                    
+                                    
+                                    
+                                
+                                    
+                                     <!-- **MyStory -->
+
+                <li id="menu-item-182" class="crumenu-tab crumenu-item      crumenu-item-has-children   crumenu-item-auto crumenu-column crumenu-column-full crumenu-has-submenu-drop"
+                data-crumenu-trigger="mouseover"><a class="crumenu-target crumenu-target-with-icon crumenu-item-layout-default crumenu-item-layout-icon_left" href="#"><span class="crumenu-target-title crumenu-target-text">Careers</span></a>
+                   <ul
+                    class="crumenu-tab-content-panel crumenu-column crumenu-column-4-5 crumenu-submenu   crumenu-submenu-type-tab-content-panel  crumenu-autoclear">
+                         <li class="crumenu-item  crumenu-item-has-children   crumenu-item-auto  crumenu-item-header  crumenu-column  crumenu-column-1-3 crumenu-has-submenu-stack"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">View All</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                                <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Hourly and Salaried Positions at our World Headquarters</span></a>
+                                </li>
+                                <li id="menu-item-216" class="crumenu-item   crumenu-item-object-mega-menu crumenu-item-216 crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">World Headquarters Oppurtunities</span></a>
+                                </li>
+                                <li id="menu-item-215" class="crumenu-item   crumenu-item-object-mega-menu crumenu-item-215 crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Missionary Staff Careers</span></a>
+                                </li>
+                                  <li id="menu-item-217" class="crumenu-item   crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenucrumenu-target-title crumenu-target-text">International Missions Oppurtunities</span></a>
+                                </li>
+                                  <li id="menu-item-217" class="crumenu-item   crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenucrumenu-target-title crumenu-target-text">Staff Profiles</span></a>
+                                </li>
+                          
+                                </ul>
+                        </li>
+                        
+                       <li class="crumenu-item  crumenu-item-has-children     crumenu-column crumenu-column-3-7  crumenu-item-header  crumenu-column  crumenu-has-submenu-stack">
+                            <a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text crumenu-featured">FEATURED:&nbsp;&nbsp;</span><span class="crumenu-target-title crumenu-target-text">Summer Missions with Cru</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                       
+                       <li class="crumenu-item  crumenu-item-type-custom  crumenu-item-object-custom  crumenu-item-auto  crumenu-item-header  crumenu-column"><span class="crumenu-target crumenu-target-with-image crumenu-item-layout-default crumenu-item-layout-image_left crumenu-item-notext"><img class="crumenu-image " src="/images/summer.jpg"  /></span>
+                        </li>
+                    </ul>
+                </li>
+                        <li class="crumenu-retractor crumenu-retractor-mobile"><i class="fa fa-times"></i> Close</li>
+                        </ul>
+                </li>
+                <!-- end **MyStory -->
+                          
+
+                  
+
+
+                </ul>
+                </li>
+                </ul>
+                </li>
+
+                 <!-- end Super-Menu -->
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                 
+                    <!-- Super-Menu *about* -->
+
+                    <li id="menu-item-7" class="crumenu-item   crumenu-item-object-page crumenu-current-menu-item crumenu-page_item crumenu-page-item-5 crumenu-current_page_item crumenu-item-has-children   crumenu-item-level-0 crumenu-column crumenu-column-auto crumenu-has-submenu-drop crumenu-has-submenu-mega   "><a class="crumenu-target crumenu-target-with-icon crumenu-item-layout-default crumenu-item-layout-icon_left" href="index.html" tabindex="0"><span class="crumenu-target-title crumenu-target-text">About</span></a>
+                       <ul class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-mega crumenu-submenu-drop crumenu-submenu-align-full_width crumenu-submenu-bkg-img">
+                            <!-- Begin Tabs -->
+                            <li class="crumenu-tabs  crumenu-item-level-1 crumenu-column  crumenu-column-full  crumenu-tab-layout-left  crumenu-tabs-show-default">
+                                <ul class="crumenu-tabs-group  crumenu-column crumenu-column-1-5  crumenu-submenu  crumenu-submenu-type-auto  crumenu-submenu-type-tabs-group">
+                                               
+               <li class="crumenu-tab crumenu-item  crumenu-item-has-children   crumenu-item-auto  crumenu-column  crumenu-column-full  crumenu-has-submenu-drop"
+                data-crumenu-trigger="mouseover"><a class="crumenu-target crumenu-target-with-icon crumenu-item-layout-default crumenu-item-layout-icon_left" href="#"><span class="crumenu-target-title crumenu-target-text">Donor Relations</span></a>
+                    <ul
+                    class="crumenu-tab-content-panel crumenu-column crumenu-column-4-5 crumenu-submenu   crumenu-submenu-type-tab-content-panel  crumenu-autoclear">
+                         <li class="crumenu-item  crumenu-item-has-children   crumenu-item-auto  crumenu-item-header  crumenu-column  crumenu-column-1-3 crumenu-has-submenu-stack"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">View All</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                                <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Annual Report</span></a>
+                                </li><li id="menu-item-217" class="crumenu-item   crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">How Staff Members Raise Their Salaries</span></a>
+                                </li>
+                                <li id="menu-item-216" class="crumenu-item   crumenu-item-object-mega-menu crumenu-item-216 crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Our Commitment to Stewardship</span></a>
+                                </li>
+                                 
+                                 
+                            
+                                </ul>
+                             
+                        </li>
+
+                       <li class="crumenu-item  crumenu-item-has-children     crumenu-column crumenu-column-3-7  crumenu-item-header  crumenu-column  crumenu-has-submenu-stack">
+                            <a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text crumenu-featured">FEATURED:&nbsp;&nbsp;</span><span class="crumenu-target-title crumenu-target-text">About Cru | Campus Crusade for Christ</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                       
+                       <li class="crumenu-item  crumenu-item-type-custom  crumenu-item-object-custom  crumenu-item-auto  crumenu-item-header  crumenu-column"><span class="crumenu-target crumenu-target-with-image crumenu-item-layout-default crumenu-item-layout-image_left crumenu-item-notext"><img class="crumenu-image " src="/images/about.jpg"  /></span>
+                        </li>
+                    </ul>
+                </li>
+                                    
+                                    
+                        <li class="crumenu-retractor crumenu-retractor-mobile"><i class="fa fa-times"></i> Close</li>
+                        </ul>
+                </li>
+                <!-- end **MyStory -->
+
+
+        <!-- **MyStory -->
+
+                <li id="menu-item-182" class="crumenu-tab crumenu-item      crumenu-item-has-children   crumenu-item-auto crumenu-column crumenu-column-full crumenu-has-submenu-drop"
+                data-crumenu-trigger="mouseover"><a class="crumenu-target crumenu-target-with-icon crumenu-item-layout-default crumenu-item-layout-icon_left" href="#"><span class="crumenu-target-title crumenu-target-text">What We Do</span></a>
+                     <ul
+                    class="crumenu-tab-content-panel crumenu-column crumenu-column-4-5 crumenu-submenu   crumenu-submenu-type-tab-content-panel  crumenu-autoclear">
+                         <li class="crumenu-item  crumenu-item-has-children   crumenu-item-auto  crumenu-item-header  crumenu-column  crumenu-column-1-3 crumenu-has-submenu-stack"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">View All</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                                <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Milestones</span></a>
+                                </li><li id="menu-item-217" class="crumenu-item   crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Innovators in Evangelism & Dicipleship</span></a>
+                                </li>
+                                <li id="menu-item-216" class="crumenu-item   crumenu-item-object-mega-menu crumenu-item-216 crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">In Their Words</span></a>
+                                </li>
+                                
+                               
+                          
+                                </ul>
+                        </li>
+                       
+                       <li class="crumenu-item  crumenu-item-has-children     crumenu-column crumenu-column-3-7  crumenu-item-header  crumenu-column  crumenu-has-submenu-stack">
+                            <a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text crumenu-featured">FEATURED:&nbsp;&nbsp;</span><span class="crumenu-target-title crumenu-target-text">About Cru | Campus Crusade for Christ</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                       
+                       <li class="crumenu-item  crumenu-item-type-custom  crumenu-item-object-custom  crumenu-item-auto  crumenu-item-header  crumenu-column"><span class="crumenu-target crumenu-target-with-image crumenu-item-layout-default crumenu-item-layout-image_left crumenu-item-notext"><img class="crumenu-image " src="/images/about.jpg"  /></span>
+                        </li>
+                    </ul>
+                </li>
+               
+                                    
+                                    
+                        <li class="crumenu-retractor crumenu-retractor-mobile"><i class="fa fa-times"></i> Close</li>
+                        </ul>
+                </li>
+                <!-- end **MyStory -->
+
+       <!-- **MyStory -->
+
+                <li id="menu-item-182" class="crumenu-tab crumenu-item      crumenu-item-has-children   crumenu-item-auto crumenu-column crumenu-column-full crumenu-has-submenu-drop"
+                data-crumenu-trigger="mouseover"><a class="crumenu-target crumenu-target-with-icon crumenu-item-layout-default crumenu-item-layout-icon_left" href="#"><span class="crumenu-target-title crumenu-target-text">Our Leadership</span></a>
+                    <ul
+                    class="crumenu-tab-content-panel crumenu-column crumenu-column-4-5 crumenu-submenu   crumenu-submenu-type-tab-content-panel  crumenu-autoclear">
+                         <li class="crumenu-item  crumenu-item-has-children   crumenu-item-auto  crumenu-item-header  crumenu-column  crumenu-column-1-3 crumenu-has-submenu-stack"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">View All</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                                <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">US Leadership</span></a>
+                                </li><li id="menu-item-217" class="crumenu-item   crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Global Leadership</span></a>
+                                </li>
+                                <li id="menu-item-216" class="crumenu-item   crumenu-item-object-mega-menu crumenu-item-216 crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Board of Directors</span></a>
+                                </li>
+                                 <li id="menu-item-216" class="crumenu-item   crumenu-item-object-mega-menu crumenu-item-216 crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Area team Leaders</span></a>
+                                </li>
+                                 <li id="menu-item-216" class="crumenu-item   crumenu-item-object-mega-menu crumenu-item-216 crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Our Founders</span></a>
+                                </li>
+                               
+                                 
+                            
+                                </ul>
+                             
+                        </li>
+                        
+                      
+                       <li class="crumenu-item  crumenu-item-has-children     crumenu-column crumenu-column-3-7  crumenu-item-header  crumenu-column  crumenu-has-submenu-stack">
+                            <a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text crumenu-featured">FEATURED:&nbsp;&nbsp;</span><span class="crumenu-target-title crumenu-target-text">About Cru | Campus Crusade for Christ</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                       
+                       <li class="crumenu-item  crumenu-item-type-custom  crumenu-item-object-custom  crumenu-item-auto  crumenu-item-header  crumenu-column"><span class="crumenu-target crumenu-target-with-image crumenu-item-layout-default crumenu-item-layout-image_left crumenu-item-notext"><img class="crumenu-image " src="/images/about.jpg"  /></span>
+                        </li>
+                    </ul>
+                </li>
+
+               
+                                    
+                                    
+                        <li class="crumenu-retractor crumenu-retractor-mobile"><i class="fa fa-times"></i> Close</li>
+                        </ul>
+                </li>
+                <!-- end **MyStory -->
+                                    
+                                     <!-- **MyStory -->
+
+                <li id="menu-item-182" class="crumenu-tab crumenu-item      crumenu-item-has-children   crumenu-item-auto crumenu-column crumenu-column-full crumenu-has-submenu-drop"
+                data-crumenu-trigger="mouseover"><a class="crumenu-target crumenu-target-with-icon crumenu-item-layout-default crumenu-item-layout-icon_left" href="#"><span class="crumenu-target-title crumenu-target-text">Statement of Faith</span></a>
+                    <ul
+                    class="crumenu-tab-content-panel crumenu-column crumenu-column-4-5 crumenu-submenu   crumenu-submenu-type-tab-content-panel  crumenu-autoclear">
+                         <li class="crumenu-item  crumenu-item-has-children   crumenu-item-auto  crumenu-item-header  crumenu-column  crumenu-column-1-3 crumenu-has-submenu-stack"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">View All</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                                <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Statement of Faith</span></a>
+                                </li>
+                                
+                               
+                                 
+                            
+                                </ul>
+                             
+                        </li>
+                        
+                       
+                       <li class="crumenu-item  crumenu-item-has-children     crumenu-column crumenu-column-3-7  crumenu-item-header  crumenu-column  crumenu-has-submenu-stack">
+                            <a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text crumenu-featured">FEATURED:&nbsp;&nbsp;</span><span class="crumenu-target-title crumenu-target-text">About Cru | Campus Crusade for Christ</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                       
+                       <li class="crumenu-item  crumenu-item-type-custom  crumenu-item-object-custom  crumenu-item-auto  crumenu-item-header  crumenu-column"><span class="crumenu-target crumenu-target-with-image crumenu-item-layout-default crumenu-item-layout-image_left crumenu-item-notext"><img class="crumenu-image " src="/images/about.jpg"  /></span>
+                        </li>
+                    </ul>
+                </li>
+               
+                                    
+                                    
+                        <li class="crumenu-retractor crumenu-retractor-mobile"><i class="fa fa-times"></i> Close</li>
+                        </ul>
+                </li>
+                <!-- end **MyStory -->
+                                    
+                                      <!-- **MyStory -->
+
+                <li id="menu-item-182" class="crumenu-tab crumenu-item      crumenu-item-has-children   crumenu-item-auto crumenu-column crumenu-column-full crumenu-has-submenu-drop"
+                data-crumenu-trigger="mouseover"><a class="crumenu-target crumenu-target-with-icon crumenu-item-layout-default crumenu-item-layout-icon_left" href="#"><span class="crumenu-target-title crumenu-target-text">Contact Us</span></a>
+                    <ul
+                    class="crumenu-tab-content-panel crumenu-column crumenu-column-4-5 crumenu-submenu   crumenu-submenu-type-tab-content-panel  crumenu-autoclear">
+                         <li class="crumenu-item  crumenu-item-has-children   crumenu-item-auto  crumenu-item-header  crumenu-column  crumenu-column-1-3 crumenu-has-submenu-stack"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Contact</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                                <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text  crumenu-article">Cru (U.S. Ministry)</br>
+                                    100 Lake Hart Drive</br>
+                                    Orlando, FL 32832 </br></br>Campus Crusade for Christ International</br>
+100 Lake Hart Drive</br>
+Orlando, FL 32832</br></br>
+
+1-888-278-7233</span></a>
+                                </li>
+                                
+                               
+                                 
+                            
+                                </ul>
+                             
+                        </li>
+                        
+                       
+                       <li class="crumenu-item  crumenu-item-has-children     crumenu-column crumenu-column-3-7  crumenu-item-header  crumenu-column  crumenu-has-submenu-stack">
+                            <a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text crumenu-featured">FEATURED:&nbsp;&nbsp;</span><span class="crumenu-target-title crumenu-target-text">About Cru | Campus Crusade for Christ</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                       
+                       <li class="crumenu-item  crumenu-item-type-custom  crumenu-item-object-custom  crumenu-item-auto  crumenu-item-header  crumenu-column"><span class="crumenu-target crumenu-target-with-image crumenu-item-layout-default crumenu-item-layout-image_left crumenu-item-notext"><img class="crumenu-image " src="/images/about.jpg"  /></span>
+                        </li>
+                    </ul>
+                </li>
+
+               
+                                    
+                                    
+                        <li class="crumenu-retractor crumenu-retractor-mobile"><i class="fa fa-times"></i> Close</li>
+                        </ul>
+                </li>
+                <!-- end **MyStory -->
+                                    
+                                      <!-- **MyStory -->
+
+                <li id="menu-item-182" class="crumenu-tab crumenu-item      crumenu-item-has-children   crumenu-item-auto crumenu-column crumenu-column-full crumenu-has-submenu-drop"
+                data-crumenu-trigger="mouseover"><a class="crumenu-target crumenu-target-with-icon crumenu-item-layout-default crumenu-item-layout-icon_left" href="#"><span class="crumenu-target-title crumenu-target-text">More</span></a>
+                     <ul
+                    class="crumenu-tab-content-panel crumenu-column crumenu-column-4-5 crumenu-submenu   crumenu-submenu-type-tab-content-panel  crumenu-autoclear">
+                         <li class="crumenu-item  crumenu-item-has-children   crumenu-item-auto  crumenu-item-header  crumenu-column  crumenu-column-1-3 crumenu-has-submenu-stack"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">View All</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                                <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Press</span></a>
+                                </li>
+                                <li id="menu-item-217" class="crumenu-item   crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Worldwide Challenge Magazine</span></a>
+                                </li>
+                                <li id="menu-item-217" class="crumenu-item   crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Latest Stories</span></a>
+                                </li>
+                                
+                               
+                                 
+                            
+                                </ul>
+                             
+                        </li>
+                        
+                        
+                       <li class="crumenu-item  crumenu-item-has-children     crumenu-column crumenu-column-3-7  crumenu-item-header  crumenu-column  crumenu-has-submenu-stack">
+                            <a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text crumenu-featured">FEATURED:&nbsp;&nbsp;</span><span class="crumenu-target-title crumenu-target-text">About Cru | Campus Crusade for Christ</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                       
+                       <li class="crumenu-item  crumenu-item-type-custom  crumenu-item-object-custom  crumenu-item-auto  crumenu-item-header  crumenu-column"><span class="crumenu-target crumenu-target-with-image crumenu-item-layout-default crumenu-item-layout-image_left crumenu-item-notext"><img class="crumenu-image " src="/images/about.jpg"  /></span>
+                        </li>
+                    </ul>
+                </li>
+               
+                                    
+                                    
+                        <li class="crumenu-retractor crumenu-retractor-mobile"><i class="fa fa-times"></i> Close</li>
+                        </ul>
+                </li>
+                <!-- end **MyStory -->
+                                    
+
+
+                </ul>
+                </li>
+                </ul>
+                </li>
+
+                 <!-- end Super-Menu -->
+                    
+                    
+                    
+                    
+                    
+                    
+                 
+                    <!-- Super-Menu *store* -->
+
+                    <li id="menu-item-7" class="crumenu-item   crumenu-item-object-page crumenu-current-menu-item crumenu-page_item crumenu-page-item-5 crumenu-current_page_item crumenu-item-has-children   crumenu-item-level-0 crumenu-column crumenu-column-auto crumenu-has-submenu-drop crumenu-has-submenu-mega   "><a class="crumenu-target crumenu-target-with-icon crumenu-item-layout-default crumenu-item-layout-icon_left" href="index.html" tabindex="0"><span class="crumenu-target-title crumenu-target-text">Store</span></a>
+                        <ul class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-mega crumenu-submenu-drop crumenu-submenu-align-full_width crumenu-submenu-bkg-img">
+                            <!-- Begin Tabs -->
+                            <li class="crumenu-tabs  crumenu-item-level-1 crumenu-column  crumenu-column-full  crumenu-tab-layout-left  crumenu-tabs-show-default">
+                                <ul class="crumenu-tabs-group  crumenu-column crumenu-column-1-5  crumenu-submenu  crumenu-submenu-type-auto  crumenu-submenu-type-tabs-group">
+                                               
+               <li class="crumenu-tab crumenu-item  crumenu-item-has-children   crumenu-item-auto  crumenu-column  crumenu-column-full  crumenu-has-submenu-drop"
+                data-crumenu-trigger="mouseover"><a class="crumenu-target crumenu-target-with-icon crumenu-item-layout-default crumenu-item-layout-icon_left" href="#"><span class="crumenu-target-title crumenu-target-text">Featured Products</span></a>
+                     <ul
+                    class="crumenu-tab-content-panel crumenu-column crumenu-column-4-5 crumenu-submenu   crumenu-submenu-type-tab-content-panel  crumenu-autoclear">
+                         <li class="crumenu-item  crumenu-item-has-children   crumenu-item-auto  crumenu-item-header  crumenu-column  crumenu-column-1-3 crumenu-has-submenu-stack"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">View All</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                                <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Annual Report</span></a>
+                                </li><li id="menu-item-217" class="crumenu-item   crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">How Staff Members Raise Their Salaries</span></a>
+                                </li>
+                                <li id="menu-item-216" class="crumenu-item   crumenu-item-object-mega-menu crumenu-item-216 crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Our Commitment to Stewardship</span></a>
+                                </li>
+                                 
+                                 
+                            
+                                </ul>
+                             
+                        </li>
+
+               
+                       <li class="crumenu-item  crumenu-item-has-children     crumenu-column crumenu-column-3-7  crumenu-item-header  crumenu-column  crumenu-has-submenu-stack">
+                            <a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text crumenu-featured">FEATURED:&nbsp;&nbsp;</span><span class="crumenu-target-title crumenu-target-text">Would You Like to Know God Personally?</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                       
+                       <li class="crumenu-item  crumenu-item-type-custom  crumenu-item-object-custom  crumenu-item-auto  crumenu-item-header  crumenu-column"><span class="crumenu-target crumenu-target-with-image crumenu-item-layout-default crumenu-item-layout-image_left crumenu-item-notext"><img class="crumenu-image " src="/images/howtoknow.jpg"  /></span>
+                        </li>
+                    </ul>
+                </li>
+                                    
+                                    
+                        <li class="crumenu-retractor crumenu-retractor-mobile"><i class="fa fa-times"></i> Close</li>
+                        </ul>
+                </li>
+                <!-- end **MyStory -->
+
+
+        <!-- **MyStory -->
+
+                <li id="menu-item-182" class="crumenu-tab crumenu-item      crumenu-item-has-children   crumenu-item-auto crumenu-column crumenu-column-full crumenu-has-submenu-drop"
+                data-crumenu-trigger="mouseover"><a class="crumenu-target crumenu-target-with-icon crumenu-item-layout-default crumenu-item-layout-icon_left" href="#"><span class="crumenu-target-title crumenu-target-text">All Stores</span></a>
+                     <ul
+                    class="crumenu-tab-content-panel crumenu-column crumenu-column-4-5 crumenu-submenu   crumenu-submenu-type-tab-content-panel  crumenu-autoclear">
+                         <li class="crumenu-item  crumenu-item-has-children   crumenu-item-auto  crumenu-item-header  crumenu-column  crumenu-column-1-3 crumenu-has-submenu-stack"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">View All</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                                <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Main Online Store</span></a>
+                                </li><li id="menu-item-217" class="crumenu-item   crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Stores by Ministry</span></a>
+                                </li>
+                                
+                               
+                          
+                                </ul>
+                        </li>
+                       
+               
+                       <li class="crumenu-item  crumenu-item-has-children     crumenu-column crumenu-column-3-7  crumenu-item-header  crumenu-column  crumenu-has-submenu-stack">
+                            <a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text crumenu-featured">FEATURED:&nbsp;&nbsp;</span><span class="crumenu-target-title crumenu-target-text">Would You Like to Know God Personally?</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                       
+                       <li class="crumenu-item  crumenu-item-type-custom  crumenu-item-object-custom  crumenu-item-auto  crumenu-item-header  crumenu-column"><span class="crumenu-target crumenu-target-with-image crumenu-item-layout-default crumenu-item-layout-image_left crumenu-item-notext"><img class="crumenu-image " src="/images/howtoknow.jpg"  /></span>
+                        </li>
+                    </ul>
+                </li>
+
+               
+                                    
+                                    
+                        <li class="crumenu-retractor crumenu-retractor-mobile"><i class="fa fa-times"></i> Close</li>
+                        </ul>
+                </li>
+                <!-- end **MyStory -->
+
+       <!-- **MyStory -->
+
+                <li id="menu-item-182" class="crumenu-tab crumenu-item      crumenu-item-has-children   crumenu-item-auto crumenu-column crumenu-column-full crumenu-has-submenu-drop"
+                data-crumenu-trigger="mouseover"><a class="crumenu-target crumenu-target-with-icon crumenu-item-layout-default crumenu-item-layout-icon_left" href="#"><span class="crumenu-target-title crumenu-target-text">Free</span></a>
+                     <ul
+                    class="crumenu-tab-content-panel crumenu-column crumenu-column-4-5 crumenu-submenu   crumenu-submenu-type-tab-content-panel  crumenu-autoclear">
+                         <li class="crumenu-item  crumenu-item-has-children   crumenu-item-auto  crumenu-item-header  crumenu-column  crumenu-column-1-3 crumenu-has-submenu-stack"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">View All</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                                <li class="crumenu-item  crumenu-item-object-mega-menu  crumenu-item-auto crumenu-item-normal   crumenu-column crumenu-column-auto"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text">Free</span></a>
+                                </li>
+                                
+                                
+                                 
+                            
+                                </ul>
+                             
+                        </li>
+                        
+                     
+               
+                       <li class="crumenu-item  crumenu-item-has-children     crumenu-column crumenu-column-3-7  crumenu-item-header  crumenu-column  crumenu-has-submenu-stack">
+                            <a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#"><span class="crumenu-target-title crumenu-target-text crumenu-featured">FEATURED:&nbsp;&nbsp;</span><span class="crumenu-target-title crumenu-target-text">Would You Like to Know God Personally?</span></a>
+                            <ul
+                            class="crumenu-submenu  crumenu-submenu-type-auto crumenu-submenu-type-stack">
+                       
+                       <li class="crumenu-item  crumenu-item-type-custom  crumenu-item-object-custom  crumenu-item-auto  crumenu-item-header  crumenu-column"><span class="crumenu-target crumenu-target-with-image crumenu-item-layout-default crumenu-item-layout-image_left crumenu-item-notext"><img class="crumenu-image " src="/images/howtoknow.jpg"  /></span>
+                        </li>
+                    </ul>
+                </li>
+
+               
+                                    
+                                    
+                        <li class="crumenu-retractor crumenu-retractor-mobile"><i class="fa fa-times"></i> Close</li>
+                        </ul>
+                </li>
+                <!-- end **MyStory -->
+                                    
+                                  
+
+                </ul>
+                </li>
+                </ul>
+                </li>
+
+                 <!-- end Super-Menu -->
+                    
+                    
+
+                    
+
+                    
+                    
+                    
+                    
+                    
+
+                 
+
+                
+
+
+                 <!-- Mega-Menu -->
+
+                <li id="menu-item-28" class="crumenu-item   crumenu-item-object-page crumenu-item-has-children crumenu-item-level-0 crumenu-column crumenu-column-auto  crumenu-has-submenu-mega"><a class="crumenu-target crumenu-item-layout-default crumenu-item-layout-text_only" href="#" tabindex="0"><span class="crumenu-target-title crumenu-target-text">Give</span></a></li>
+                    
+                 <!-- end Mega-Menu -->
+
+
+
+
+
+
+
+
+
+
+            
+          
+                
+                <!-- begin Segment: 4 -->
+
+               <li id="menu-item-93" class="crumenu-item crumenu-item-type-custom crumenu-item-object-crumenu-custom crumenu-item-93 crumenu-item-auto crumenu-item-header crumenu-item-level-1 crumenu-column pull-right">
+                            <div class="crumenu-content-block crumenu-custom-content ">
+                                <!-- crumenu Search Bar -->
+                                <div class="crumenu-search">
+                                    <form role="search" method="get" class="crumenu-searchform" action="index.html">
+                                        <input type="text" placeholder="Search..." value="" name="s" class="crumenu-search-input" />
+                                        <input type="submit" class="crumenu-search-submit" value="&#xf002;" />
+                                    </form>
+                                </div>
+                                <!-- end .crumenu-search -->
+                            </div>
+                        </li>
+
+
+
+
+<li>
+                                <div class="crumenu-content-block crumenu-custom-content ">
+                                                                    <div class="crumenu-search">
+
+
+                                        <select type="select" class="form-control site-search__select  crumenu-item crumenu-item-type-custom crumenu-item-object-crumenu-custom crumenu-item-93 crumenu-item-auto crumenu-item-header crumenu-item-level-1 crumenu-column pull-right  crumenu-select">
+                                            <option value="Entire Site">www.cru.org</option>
+                                            <option value="Give">Give to Staff and Ministries</option>
+                                        </select>
+                                                                                                    </div>
+                            </div>
+
+                                    </li>
+
+               
+                
+                <!-- end Segment: 4 -->
+                </ul>
+            </nav>
+            <!-- End crumenu -->
+    <a class="toggle-nav">Toggle Nav</a>
+</nav>
+
+<!-- END SITE NAV -->
+
+
+        
+      </header>     
+<section role="main" class="page-content">
+    <div class="cover" style="display: none"></div>
+    
+    <!-- PAGE CONTENT --> 
+    <div class="">
+        <div xk-section="v1" class="parbase main-slider base curated">
+
+        <div class="content-slider  position--relative  overflow--hide  mb">
+
+        <div class="slider  centered  position--relative">
+                <!-- .mask -->
+                <div class="slider__mask  overflow--hide">
+                  <ul class="bare-list">
+
+	
+                            <li class="slider__item  position--absolute  full-height">
+                              <a class="position--relative  display--block  full-height" href="http://cru.org/communities/athletes/my-story-adam-wainwright.html" onclick="ga('send', 'event', 'Carousel', 'CruHome', 'http://cru.org/content/cru/us/en/communities/athletes/my-story-adam-wainwright.html');">
+                                <div class="full-height  full-width">
+                                  <!-- This is the background image style that will be changed based on the article image -->
+                                  <div class="background-image" style="background-image: url('http://cru.org/communities/athletes/my-story-adam-wainwright/_jcr_content/image.transform/Cru704x396/image.jpg')"></div>
+                                </div>
+                                <div class="article-details  position--absolute  p0">
+                                  <h3 class="affordance  display--block  m0">&quot;I had doubts and was always questioning&quot;</h3>
+                                </div>
+                              </a>
+                            </li>
+   
+                            <li class="slider__item  position--absolute  full-height">
+                              <a class="position--relative  display--block  full-height" href="http://cru.org/communities/families/dont-become-a-social-media-marriage-casualty.html" onclick="ga('send', 'event', 'Carousel', 'CruHome', 'http://cru.org/content/cru/us/en/communities/families/dont-become-a-social-media-marriage-casualty.html');">
+                                <div class="full-height  full-width">
+                                  <!-- This is the background image style that will be changed based on the article image -->
+                                  <div class="background-image" style="background-image: url('http://cru.org/communities/families/dont-become-a-social-media-marriage-casualty/_jcr_content/image.transform/Cru704x396/image.jpg')"></div>
+                                </div>
+                                <div class="article-details  position--absolute  p0">
+                                  <h3 class="affordance  display--block  m0">Don’t become a social media marriage casualty</h3>
+                                </div>
+                              </a>
+                            </li>
+   
+                            <li class="slider__item  position--absolute  full-height">
+                              <a class="position--relative  display--block  full-height" href="http://cru.org/train-and-grow/bible-studies/7-steps-to-improve-your-bible-study.html" onclick="ga('send', 'event', 'Carousel', 'CruHome', 'http://cru.org/content/cru/us/en/train-and-grow/bible-studies/7-steps-to-improve-your-bible-study.html');">
+                                <div class="full-height  full-width">
+                                  <!-- This is the background image style that will be changed based on the article image -->
+                                  <div class="background-image" style="background-image: url('http://cru.org/train-and-grow/bible-studies/7-steps-to-improve-your-bible-study/_jcr_content/image.transform/Cru704x396/image.jpg')"></div>
+                                </div>
+                                <div class="article-details  position--absolute  p0">
+                                  <h3 class="affordance  display--block  m0">7 steps to improve your Bible study</h3>
+                                </div>
+                              </a>
+                            </li>
+   
+                            <li class="slider__item  position--absolute  full-height">
+                              <a class="position--relative  display--block  full-height" href="http://cru.org/communities/inner-city/finding-consistency-in-devastation.html" onclick="ga('send', 'event', 'Carousel', 'CruHome', 'http://cru.org/content/cru/us/en/communities/inner-city/finding-consistency-in-devastation.html');">
+                                <div class="full-height  full-width">
+                                  <!-- This is the background image style that will be changed based on the article image -->
+                                  <div class="background-image" style="background-image: url('http://cru.org/communities/inner-city/finding-consistency-in-devastation/_jcr_content/image.transform/Cru704x396/image.jpg')"></div>
+                                </div>
+                                <div class="article-details  position--absolute  p0">
+                                  <h3 class="affordance  display--block  m0">Finding consistency in devastation</h3>
+                                </div>
+                              </a>
+                            </li>
+   
+
+                  </ul>
+                </div>
+                <!-- end .mask -->
+              </div>
+              <a class="slider-control  slider-control__prev  position--absolute">
+                    <span class="slider-control--btn  position--absolute">
+                      <i class="icon-left-arrow"></i>
+                    </span>
+              </a>
+              <a class="slider-control  slider-control__next  position--absolute">
+                    <span class="slider-control--btn  position--absolute">
+                      <i class="icon-right-arrow"></i>
+                    </span>
+              </a>
+            </div>
+
+
+        </div>
+
+            <!-- End slider component -->
+
+            <!-- Homepage social bar -->
+                <div xk-section="v1" class="parbase social social-bar base">
+        <div class="center--block  color-white">
+        	<div class="layout--full pe--">
+            	<div class="push-half--sides social-shares">
+
+
+	
+                    		<div class="push-third--right fb-like" data-href="https://www.facebook.com/CruGlobal" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+	
+
+
+
+
+
+                 		<a href="https://twitter.com/crutweets" class="twitter-follow-button  push-fourth--right" data-show-count="false" data-lang="en"></a>
+
+
+                  	<div class="g-plusone" data-size="medium" data-annotation="none"></div>
+        		 	<script type="text/javascript">
+                    	(function() {
+                      		var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                      		po.src = 'https://apis.google.com/js/platform.js';
+                      		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                    	})();
+                  	</script>
+
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+            <!-- End hompage socail bar-->
+
+
+
+            <!-- Primary wrapper for home page-->
+            <div class="layout--wide">
+                <div class="mt center-block  home-banner">
+                    <div xk-section="v1" class="parbase base section-title">
+
+        <div class="section-title  center-block  masonry__item  grid__item">
+        	<h2 class="section-title__item  banner-title  display--inline-block">
+
+        			Cru is a caring community passionate about connecting people to Jesus Christ
+
+        	</h2>
+
+
+        			<div class="section-title__item  display--inline-block  inline-btn">
+        				<a href="/about/what-we-do.html" class="button  button--secondary">Learn More</a>
+
+        			</div>
+
+
+        </div>
+        </div>
+
+
+                 </div>
+
+                <hr class="section-divider">
+                <!-- Tiles -->
+                <div  class="grid masonry-container"> <!--This and the following grid is using same markup as tile-components for the tiles-->
+                    <div class="tile-container-parsys parsys"><div xk-section="v1" class="single parbase tile base section">
+        <div class="grid__item masonry__item desk--one-half  lap--one-half  one-whole">
+            <div class="tile__item">
+
+                		<div>
+        
+                            <img src="http://cru.org/content/cru/us/en/_jcr_content/tile-container-parsys/tile.transform/CruHalf432x243/image.jpg" class="full-width" alt="Train and Grow">
+        
+                        </div>
+
+
+
+                <h4>Train and Grow</h4>
+
+
+
+                  <p><a href="/train-and-grow/training/reach-your-world.html">How to share your faith</a><br>
+        <a href="/train-and-grow/bible-studies.html">Bible studies &amp; small group materials</a><br>
+        <a href="/train-and-grow/devotional-life.html">Daily devotionals</a><br>
+        <a href="/train-and-grow/classics.html">Answer basic faith questions</a><br>
+        <a href="/train-and-grow/evangelism.html">Tools for sharing your faith</a></p>
+
+
+            </div>
+          </div>
+        </div>
+        <div xk-section="v1" class="single parbase tile base section">
+        <div class="grid__item masonry__item desk--one-half  lap--one-half  one-whole">
+            <div class="tile__item">
+
+                		<div>
+        
+                            <img src="http://cru.org/content/cru/us/en/_jcr_content/tile-container-parsys/tile_0.transform/CruHalf432x243/image.jpg" class="full-width" alt="Communities">
+        
+                        </div>
+
+
+
+                <h4>Communities</h4>
+
+
+
+                  <p><a href="/highschool.html">High school</a><br>
+        <a href="/communities/campus.html">College</a><br>
+        <a href="/communities/athletes.html">Athletes</a><br>
+        <a href="/communities/families.html">Families</a><br>
+        <a href="/military.html">Military</a><br>
+        <a href="/city.html">City</a></p>
+
+
+            </div>
+          </div>
+        </div>
+
+        </div>
+
+                </div>
+
+                <hr class="section-divider">
+
+                 <!--Two large buttons. One for finder other for Start Relationship...-->
+                <div class="grid  button-group  mb-">
+                      <div class="desk--one-half grid__item">
+           <div class="mb--">
+
+        	      <a href="/communities/locations.html" class="button button--primary full-width">Locate a Cru Ministry Near You</a>
+
+           </div>
+        </div>
+
+                      <div class="desk--one-half grid__item">
+           <div class="mb--">
+
+        	      <a href="/how-to-know-god/would-you-like-to-know-god-personally.html" class="button button--primary full-width">Start a Personal Relationship With Jesus</a>
+
+           </div>
+        </div>
+
+                </div>
+
+                <hr class="section-divider">
+
+                 <!--List items for the quasi site map and facebook iframe-->
+                 <div class="grid">
+                   <div class="grid__item one-whole desk--one-half">
+
+                     <div class="grid">
+                         <div class="grid__item  lap--one-half desk--one-half">
+                             <div xk-section="v1" class="home-page-curated-1 parbase base curated home-page-curated">
+
+        	<h5 class="weight--semibold">Ministries by Location</h5>
+           	<ul class="block-list mb">
+
+            		<li><a href="/communities/locations/africa.html">Africa</a></li>
+
+            		<li><a href="/communities/locations/americas.html">Americas</a></li>
+
+            		<li><a href="/communities/locations/asia.html">Asia</a></li>
+
+            		<li><a href="/communities/locations/australia-and-oceania.html">Australia-Oceania</a></li>
+
+            		<li><a href="/communities/locations/europe.html">Europe</a></li>
+
+          	</ul>
+
+        </div>
+
+                             <div xk-section="v1" class="home-page-curated-2 parbase base curated home-page-curated">
+
+        	<h5 class="weight--semibold">Ministries by Interest</h5>
+           	<ul class="block-list mb">
+
+            		<li><a href="/highschool.html">High School</a></li>
+
+            		<li><a href="/city.html">City</a></li>
+
+            		<li><a href="/campus.html">Campus</a></li>
+
+            		<li><a href="/communities/athletes.html">Athletes</a></li>
+
+            		<li><a href="/communities/families.html">Families</a></li>
+
+            		<li><a href="/communities/ministries.html">More</a></li>
+
+          	</ul>
+
+        </div>
+
+                         </div>
+                         <div class="grid__item  lap--one-half desk--one-half">
+                             <div xk-section="v1" class="parbase base curated home-page-curated home-page-curated-3">
+
+        	<h5 class="weight--semibold">Ministries by Name</h5>
+           	<ul class="block-list mb">
+
+            		<li><a href="/communities/athletes.html">Athletes</a></li>
+
+            		<li><a href="/campus.html">Campus</a></li>
+
+            		<li><a href="/communities/ministries/christian-embassy-dc.html">Christian Embassy, D.C.</a></li>
+
+            		<li><a href="/communities/ministries/christian-embassy-united-nations.html">Christian Embassy – United Nations</a></li>
+
+            		<li><a href="/city.html">City</a></li>
+
+            		<li><a href="/military.html">Cru Military</a></li>
+
+            		<li><a href="/communities/ministries/faculty-and-graduates.html">Faculty &amp; Graduates</a></li>
+
+            		<li><a href="/communities/families.html">Families</a></li>
+
+            		<li><a href="/communities/ministries/gain.html">Global Aid Network</a></li>
+
+            		<li><a href="/highschool.html">High School</a></li>
+
+            		<li><a href="/communities/inner-city.html">Inner City</a></li>
+
+            		<li><a href="/communities/ministries/the-impact-movement.html">The Impact Movement</a></li>
+
+            		<li><a href="/communities/ministries/the-jesus-film-project.html">The JESUS Film Project®</a></li>
+
+            		<li><a href="/communities/ministries/josh-mcdowell-ministry.html">Josh McDowell Ministry</a></li>
+
+            		<li><a href="/communities/ministries/keynote.html">Keynote</a></li>
+
+          	</ul>
+
+        </div>
+
+                         </div>
+                     </div> <!--end grid-->
+                   </div> <!--end grid__item-->
+                   <div class="grid__item  desk--one-half">
+                        <div class="parsys home-section-container-parsys-2"><div xk-section="v1" class="parbase base socialmedia section">
+
+
+                <fb:like-box href="https://www.facebook.com/CruGlobal" width="426" show_faces="false" stream="true" header="false" border_color="white"></fb:like-box>
+
+
+        </div>
+
+        </div>
+
+                   </div>
+
+                 </div> <!--end grid-->
+                <!-- End tiles -->
+        	</div>
+    </div>
+    <!-- END PAGE CONTENT -->
+
+
+        <!-- Footer Component -->
+    <footer class="global-footer">
+    <hr class="section-divider">
+
+    <!-- Social wrapper -->
+    <div xk-section="v1" class="parbase socialLinks base social-links">
+    <div class="mb  masonry__item">
+    	<!-- Social -->
+    	<div class="social  center-block">
+        	<ul class="nav">
+
+                	<li>
+                    	<a class="social__item  social__item--twitter  icon-twitter" href="https://twitter.com/crutweets" rel="external"></a>
+                	</li>
+
+
+                	<li>
+                    	<a class="social__item  social__item--facebook  icon-facebook" href="https://www.facebook.com/CruGlobal" rel="external"></a>
+                	</li>
+
+
+                	<li>
+                    	<a class="social__item  social__item--gplus  icon-gplus" href="https://plus.google.com/116335191579496628831/posts" rel="external"></a>
+                	</li>
+
+        	</ul>
+    	</div>
+    	<!-- End social-->
+    </div>
+    <!-- End social wrapper -->
+    </div>
+
+    <!-- End social wrapper -->
+
+    <nav role="supplementary">
+        <ul class="nav  flush--bottom">
+
+                <li>
+                  <a href="/about/contact-us.html">Contact Us</a>
+                </li>
+
+                <li>
+                  <a href="/metadata/rss-feeds.html">RSS Feed</a>
+                </li>
+
+                <li>
+                  <a href="/about/press.html">Press</a>
+                </li>
+
+                <li>
+                  <a href="/opportunities/careers.html">Careers</a>
+                </li>
+
+                <li>
+                  <a href="/about/terms-of-use.html">Terms of Use</a>
+                </li>
+
+                <li>
+                  <a href="/about/privacy.html">Your Privacy</a>
+                </li>
+
+        </ul>
+    </nav>
+
+
+        <div class="copy">
+          <small>©1994-2014 Cru. All Rights Reserved.</small>
+        </div>
+
+    </footer>
+    <!-- End footer component -->
+</section>
+            
+            
+            <aside class="off-canvas  off-canvas--left">
+                <ul role="navigation" class="block-list  m0">
+                    <li class="has-dropdown">
+                        <a href="#" class="site-nav__link">Train and Grow</a>
+                        <ul class="dropdown  drop-right">
+                            <li>
+                                <a href="#">Link 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Link 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Link 3</a>
+                            </li>
+                            <li>
+                                <a href="#">Link 4</a>
+                            </li>
+                            <li>
+                                <a href="#">Link 5</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="site-nav__link">How to Know God</a>
+                    </li>
+                    <li>
+                        <a href="#" class="site-nav__link">Communities</a>
+                    </li>
+                    <li>
+                        <a href="#" class="site-nav__link">Opportunities</a>
+                    </li>
+                    <li>
+                        <a href="#" class="site-nav__link">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="site-nav__link">Give</a>
+                    </li>
+                </ul>
+            </aside> 
+        </div>
+    </div>
+    
+    	</div><!-- End #js-inner-wrap -->
+      </div><!-- End #js-outer-wrap -->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
+
+        <script type="text/javascript" src="http://cru.org/etc/designs/cru/clientlibs.min.js"></script>
+    
+        <script type="text/javascript">    
+            $(document).ready(function(){
+                $(  ".level0" ).hover(function() {
+                    $( this ).delay( 1400 ).addClass( "is-active" );
+                    
+                    //$(".cover").fadeIn(200).show();
+                    $(".cover").show();
+                    
+                }, function() {
+                    $( this ).delay( 1400 ).removeClass( "is-active" );
+                    
+                    //$(".cover").fadeOut(200).hide();
+                    $(".cover").hide();
+                    
+                });
+            });     
+        </script>
+
+        <script src="/js/menu-aim.js"></script>
+        
+        <script>
+            var $menu = $(".menu-dropdown__content");
+        
+            $menu.menuAim({
+                activate: activateSubmenu,
+                deactivate: deactivateSubmenu,
+                exitMenu: function(){
+                    return true;
+                }
+            });
+        
+            function activateSubmenu(row) {
+               var $row = $(row),
+                   //submenuClass = $row.find("submenuClass"),
+                   $submenu = $row.find(".menu-submenu").first(),
+                   height = $menu.outerHeight(),
+                   width = $menu.outerWidth();
+                   
+                   console.log($submenu);
+               
+               // Show the submenu
+               $submenu.css({
+                   display: "block",
+               });
+
+               // Keep the currently activated row's highlighted look
+               $row.find(".nav-cat").addClass("maintain-hover");
+               $row.parent(".menu-dropdown__content").first().addClass("submenu-open");
+           }
+
+           function deactivateSubmenu(row) {
+               var $row = $(row),
+                   //submenuClass = $row.data("submenuClass"),
+                   $submenu = $row.find(".menu-submenu").first();
+
+               // Hide the submenu and remove the row's highlighted look
+               $submenu.css("display", "none");
+               $row.find(".nav-cat").removeClass("maintain-hover");
+               $row.find(".nav-cat").removeClass("maintain-hover");
+               
+               $row.parent(".menu-dropdown__content").first().removeClass("submenu-open");
+           }
+        </script>
+        
+        <script  type="text/javascript"  src="https://rawgithub.com/WickyNilliams/headroom.js/master/dist/headroom.js"></script>      
+   <script  type="text/javascript"  src="https://rawgithub.com/WickyNilliams/headroom.js/master/src/jQuery.headroom.js"></script>
+    <script type="text/javascript">
+        $(".header-fixed-top").headroom();
+    </script>  
+        
+        
+
+
+
+
+    
+    </body>
+</html>
